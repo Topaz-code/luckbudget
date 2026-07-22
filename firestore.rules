@@ -1,0 +1,113 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function owns(userId) {
+      return signedIn() && request.auth.uid == userId;
+    }
+
+    function validBudget(data) {
+      return data.currency == 'NGN'
+        && data.schemaVersion == 1
+        && data.primaryIncome is number && data.primaryIncome >= 0
+        && data.studentAllowance is number && data.studentAllowance >= 0
+        && data.incomeGift is number && data.incomeGift >= 0
+        && data.food is number && data.food >= 0
+        && data.internet is number && data.internet >= 0
+        && data.transportation is number && data.transportation >= 0
+        && data.netflix is number && data.netflix >= 0
+        && data.debt is number && data.debt >= 0
+        && data.emergencySavings is number && data.emergencySavings >= 0
+        && data.fixedSavings is number && data.fixedSavings >= 0
+        && data.religiousContribution is number && data.religiousContribution >= 0
+        && data.miscellaneous is number && data.miscellaneous >= 0
+        && data.variableGift is number && data.variableGift >= 0
+        && data.totalIncome == data.primaryIncome + data.studentAllowance + data.incomeGift
+        && data.totalFixedExpenses == data.food + data.internet + data.transportation
+          + data.netflix + data.debt + data.emergencySavings + data.fixedSavings
+          + data.religiousContribution
+        && data.totalVariableExpenses == data.miscellaneous + data.variableGift
+        && data.totalExpenses == data.totalFixedExpenses + data.totalVariableExpenses
+        && data.remaining == data.totalIncome - data.totalExpenses
+        && data.remaining >= 0;
+    }
+
+    function validExpense(data) {
+      return data.currency == 'NGN'
+        && data.amountKobo is number && data.amountKobo > 0
+        && data.category in [
+          'food', 'internet', 'transportation', 'netflix', 'debt',
+          'religiousContribution', 'miscellaneous', 'gift'
+        ]
+        && data.note is string && data.note.size() <= 120
+        && data.localDate is string
+        && data.month is string
+        && data.clientCreatedAt is string;
+    }
+
+    function validTodo(data) {
+      return data.currency == 'NGN'
+        && data.title is string && data.title.size() > 0 && data.title.size() <= 80
+        && data.notes is string && data.notes.size() <= 300
+        && data.estimatedCostKobo is number && data.estimatedCostKobo > 0
+        && data.category in [
+          'food', 'internet', 'transportation', 'netflix', 'debt',
+          'religiousContribution', 'miscellaneous', 'gift'
+        ]
+        && data.scheduledDate is string
+        && data.deadlineDate is string
+        && data.deadlineDate >= data.scheduledDate
+        && data.status in ['pending', 'completed', 'cancelled']
+        && data.clientCreatedAt is string
+        && data.clientUpdatedAt is string;
+    }
+
+    match /users/{userId} {
+      allow read, create, update: if owns(userId);
+      allow delete: if owns(userId);
+
+      match /budgets/{monthId} {
+        allow read: if owns(userId);
+        allow create, update: if owns(userId) && validBudget(request.resource.data);
+        allow delete: if owns(userId);
+      }
+
+      match /expenses/{expenseId} {
+        allow read: if owns(userId);
+        allow create, update: if owns(userId) && validExpense(request.resource.data);
+        allow delete: if owns(userId);
+      }
+
+      match /todos/{todoId} {
+        allow read: if owns(userId);
+        allow create, update: if owns(userId) && validTodo(request.resource.data);
+        allow delete: if owns(userId);
+      }
+
+      match /settings/{settingId} {
+        allow read: if owns(userId);
+        allow create, update: if owns(userId)
+          && settingId == 'dailyLock'
+          && request.resource.data.preference in ['rollover', 'reset'];
+        allow delete: if owns(userId);
+      }
+
+      match /notificationTokens/{tokenId} {
+        allow read, create, update, delete: if owns(userId);
+      }
+
+      // New subcollections are private by default until deliberately reviewed.
+      match /{document=**} {
+        allow read, write: if false;
+      }
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

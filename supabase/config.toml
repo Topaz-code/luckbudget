@@ -1,0 +1,10 @@
+project_id = "mhfoovyblfbtenowinrc"
+
+[functions.monnify-api]
+verify_jwt = false
+
+[functions.monnify-webhook]
+verify_jwt = false
+
+[functions.reconcile-monnify]
+verify_jwt = false

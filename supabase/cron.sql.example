@@ -1,0 +1,29 @@
+-- Run this in Supabase SQL Editor after deploying reconcile-monnify.
+-- First create the same random value in Edge Function secrets:
+-- supabase secrets set CRON_SECRET="a-long-random-value"
+
+create extension if not exists pg_cron;
+create extension if not exists pg_net;
+create extension if not exists supabase_vault;
+
+select vault.create_secret('REPLACE_WITH_THE_SAME_RANDOM_VALUE', 'lockbudget_cron_secret');
+
+select cron.schedule(
+  'lockbudget-reconcile-monnify',
+  '*/15 * * * *',
+  $$
+  select net.http_post(
+    url := 'https://mhfoovyblfbtenowinrc.supabase.co/functions/v1/reconcile-monnify',
+    headers := jsonb_build_object(
+      'Content-Type', 'application/json',
+      'x-cron-secret', (
+        select decrypted_secret
+        from vault.decrypted_secrets
+        where name = 'lockbudget_cron_secret'
+        limit 1
+      )
+    ),
+    body := '{}'::jsonb
+  );
+  $$
+);

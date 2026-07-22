@@ -1,0 +1,23 @@
+node_modules/
+.expo/
+dist/
+web-build/
+coverage/
+.git/
+*.log
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+/ios
+/android
+supabase/.env.secrets.local
+supabase/.env.local
+.secret.local
+**/.secret.local
+GoogleService-Info.plist
+
+# Public mobile build configuration is intentionally included in EAS uploads.
+!.env
+!google-services.json
