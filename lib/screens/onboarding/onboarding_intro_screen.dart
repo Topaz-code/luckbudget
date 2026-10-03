@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
-import '../../theme/app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_dimens.dart';
+import '../../core/widgets/app_button.dart';
 import 'onboarding_budget_setup_screen.dart';
 
+/// Screen 1: Onboarding Intro & User Identification (Figma `Group 4` / `38:187`)
 class OnboardingIntroScreen extends StatefulWidget {
   final VoidCallback? onLoginTap;
   final VoidCallback? onComplete;
@@ -47,11 +51,14 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
       backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppDimens.space24,
+            vertical: AppDimens.space16,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              // Top Bar with Logo & Login CTA
+              // Top Bar with LockBudget Logo & Login CTA
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -59,17 +66,21 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     children: [
                       Image.asset(
                         'assets/images/02_otis_tux.png',
-                        height: 32,
-                        width: 32,
-                        errorBuilder: (_, _, _) => const Icon(Icons.pets, color: AppTheme.accentTurquoise, size: 28),
+                        height: 30,
+                        width: 30,
+                        errorBuilder: (_, _, _) => const Icon(
+                          Icons.pets,
+                          color: AppColors.accentTurquoise,
+                          size: 26,
+                        ),
                       ),
-                      const SizedBox(width: 8),
-                      const Text(
+                      const SizedBox(width: AppDimens.space8),
+                      Text(
                         'Lockbudget',
-                        style: TextStyle(
-                          fontSize: 18,
+                        style: GoogleFonts.sourceSans3(
+                          fontSize: 18.0,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.primaryTeal,
+                          color: AppColors.primaryTeal,
                           letterSpacing: -0.3,
                         ),
                       ),
@@ -77,43 +88,43 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                   ),
                   TextButton(
                     onPressed: widget.onLoginTap ?? _handleContinue,
-                    child: const Text(
+                    child: Text(
                       'Login',
-                      style: TextStyle(
-                        fontSize: 15,
+                      style: GoogleFonts.sourceSans3(
+                        fontSize: 15.0,
                         fontWeight: FontWeight.w700,
-                        color: AppTheme.primaryTeal,
+                        color: AppColors.primaryTeal,
                       ),
                     ),
                   ),
                 ],
               ),
 
-              const SizedBox(height: 36),
+              const SizedBox(height: AppDimens.space32),
 
               // Title & Subtitle
-              const Text(
+              Text(
                 'Let’s get to know you!',
-                style: TextStyle(
-                  fontSize: 28,
+                style: GoogleFonts.sourceSans3(
+                  fontSize: 27.0,
                   fontWeight: FontWeight.w800,
-                  color: AppTheme.primaryTeal,
+                  color: AppColors.primaryTeal,
                   letterSpacing: -0.5,
                 ),
               ),
-              const SizedBox(height: 6),
-              const Text(
+              const SizedBox(height: AppDimens.space6),
+              Text(
                 'Introduce yourself.',
-                style: TextStyle(
-                  fontSize: 16,
-                  color: AppTheme.textSecondary,
+                style: GoogleFonts.sourceSans3(
+                  fontSize: 15.5,
                   fontWeight: FontWeight.w500,
+                  color: AppColors.textSecondary,
                 ),
               ),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: AppDimens.space32),
 
-              // Surname & First Name row
+              // Surname & First Name row (Exact Figma 2-column layout)
               Row(
                 children: [
                   Expanded(
@@ -122,7 +133,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                       controller: _surnameController,
                     ),
                   ),
-                  const SizedBox(width: 14),
+                  const SizedBox(width: AppDimens.space12),
                   Expanded(
                     child: _buildInputField(
                       label: 'First name',
@@ -132,7 +143,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                 ],
               ),
 
-              const SizedBox(height: 16),
+              const SizedBox(height: AppDimens.space16),
 
               // Email field
               _buildInputField(
@@ -141,35 +152,39 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                 keyboardType: TextInputType.emailAddress,
               ),
 
-              const SizedBox(height: 28),
+              const SizedBox(height: AppDimens.space24),
 
               // "or" Divider
               Row(
-                children: const [
-                  Expanded(child: Divider(color: Color(0xFFE2E8F0), thickness: 1)),
+                children: [
+                  const Expanded(child: Divider(color: AppColors.borderLight, thickness: 1.0)),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 14),
+                    padding: const EdgeInsets.symmetric(horizontal: AppDimens.space12),
                     child: Text(
                       'or',
-                      style: TextStyle(fontSize: 13, color: AppTheme.textMuted, fontWeight: FontWeight.w500),
+                      style: GoogleFonts.sourceSans3(
+                        fontSize: 13.0,
+                        fontWeight: FontWeight.w500,
+                        color: AppColors.textMuted,
+                      ),
                     ),
                   ),
-                  Expanded(child: Divider(color: Color(0xFFE2E8F0), thickness: 1)),
+                  const Expanded(child: Divider(color: AppColors.borderLight, thickness: 1.0)),
                 ],
               ),
 
-              const SizedBox(height: 24),
+              const SizedBox(height: AppDimens.space24),
 
-              // Google Auth Button
+              // Continue with Google Button
               SizedBox(
                 width: double.infinity,
-                height: 54,
+                height: AppDimens.buttonHeight,
                 child: OutlinedButton(
                   style: OutlinedButton.styleFrom(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    side: const BorderSide(color: Color(0xFFE2E8F0), width: 1.2),
+                    padding: const EdgeInsets.symmetric(horizontal: AppDimens.space16),
+                    side: const BorderSide(color: AppColors.borderLight, width: 1.2),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(28),
+                      borderRadius: BorderRadius.circular(AppDimens.radiusFull),
                     ),
                   ),
                   onPressed: _handleContinue,
@@ -178,27 +193,27 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Container(
-                        width: 22,
-                        height: 22,
+                        width: 20,
+                        height: 20,
                         decoration: const BoxDecoration(shape: BoxShape.circle),
                         child: const Center(
                           child: Text(
                             'G',
                             style: TextStyle(
-                              fontSize: 16,
+                              fontSize: 15,
                               fontWeight: FontWeight.w900,
                               color: Color(0xFF4285F4),
                             ),
                           ),
                         ),
                       ),
-                      const SizedBox(width: 10),
-                      const Text(
+                      const SizedBox(width: AppDimens.space10),
+                      Text(
                         'Continue with Google',
-                        style: TextStyle(
-                          fontSize: 15,
+                        style: GoogleFonts.sourceSans3(
+                          fontSize: 15.0,
                           fontWeight: FontWeight.w700,
-                          color: AppTheme.textPrimary,
+                          color: AppColors.textPrimary,
                         ),
                       ),
                     ],
@@ -206,45 +221,28 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                 ),
               ),
 
-              const SizedBox(height: 20),
+              const SizedBox(height: AppDimens.space20),
 
               // Security notice
-              const Center(
+              Center(
                 child: Text(
                   'We’ll never share or sell your data. · Bank-level security.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: AppTheme.textMuted,
+                  style: GoogleFonts.sourceSans3(
+                    fontSize: 12.0,
                     fontWeight: FontWeight.w500,
+                    color: AppColors.textMuted,
                   ),
                 ),
               ),
 
-              const SizedBox(height: 32),
+              const SizedBox(height: AppDimens.space32),
 
-              // Continue CTA
-              SizedBox(
-                width: double.infinity,
-                height: 54,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryTeal,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                  ),
-                  onPressed: _handleContinue,
-                  child: const Text(
-                    'Continue',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
+              // Continue CTA Button
+              AppButton(
+                label: 'Continue',
+                onPressed: _handleContinue,
+                variant: AppButtonVariant.primary,
               ),
             ],
           ),
@@ -259,30 +257,34 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
     TextInputType keyboardType = TextInputType.text,
   }) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppDimens.space16,
+        vertical: AppDimens.space10,
+      ),
       decoration: BoxDecoration(
-        color: const Color(0xFFF1F5F5),
-        borderRadius: BorderRadius.circular(16),
+        color: AppColors.background,
+        borderRadius: BorderRadius.circular(AppDimens.radiusButton),
+        border: Border.all(color: AppColors.borderLight, width: 1.0),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             label,
-            style: const TextStyle(
-              fontSize: 12,
+            style: GoogleFonts.sourceSans3(
+              fontSize: 12.0,
               fontWeight: FontWeight.w600,
-              color: AppTheme.textSecondary,
+              color: AppColors.textSecondary,
             ),
           ),
-          const SizedBox(height: 2),
+          const SizedBox(height: AppDimens.space2),
           TextField(
             controller: controller,
             keyboardType: keyboardType,
-            style: const TextStyle(
-              fontSize: 15,
+            style: GoogleFonts.sourceSans3(
+              fontSize: 15.0,
               fontWeight: FontWeight.w600,
-              color: AppTheme.textPrimary,
+              color: AppColors.textPrimary,
             ),
             decoration: const InputDecoration(
               isDense: true,

@@ -25,6 +25,7 @@ class AppDimens {
 
   /// Status badge & category chip: Stadium pill (999.0px)
   static const double radiusPill = 999.0;
+  static const double radiusFull = 999.0;
   static const BorderRadius borderRadiusPill = BorderRadius.all(Radius.circular(radiusPill));
 
   // ─── HEIGHTS & VIEWPORT METRICS ───────────────────────────────────────────

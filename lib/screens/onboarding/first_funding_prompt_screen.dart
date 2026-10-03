@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import '../../theme/app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_dimens.dart';
+import '../../core/widgets/app_button.dart';
 import '../main_navigation_shell.dart';
 
+/// Screen 3: First Account Funding Prompt (Figma `first-funding-prompt 1` / `68:6904`)
 class FirstFundingPromptScreen extends StatelessWidget {
   final String userName;
   final VoidCallback? onComplete;
@@ -32,6 +36,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0,
         automaticallyImplyLeading: false,
+        centerTitle: true,
         title: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -39,250 +44,275 @@ class FirstFundingPromptScreen extends StatelessWidget {
               'assets/images/02_otis_tux.png',
               height: 28,
               width: 28,
-              errorBuilder: (_, _, _) => const Icon(Icons.pets, color: AppTheme.accentTurquoise, size: 24),
+              errorBuilder: (_, _, _) => const Icon(
+                Icons.pets,
+                color: AppColors.accentTurquoise,
+                size: 24,
+              ),
             ),
-            const SizedBox(width: 8),
-            const Text(
+            const SizedBox(width: AppDimens.space8),
+            Text(
               'Lockbudget',
-              style: TextStyle(
-                fontSize: 17,
+              style: GoogleFonts.sourceSans3(
+                fontSize: 17.0,
                 fontWeight: FontWeight.w800,
-                color: AppTheme.primaryTeal,
+                color: AppColors.primaryTeal,
               ),
             ),
           ],
         ),
       ),
-
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppDimens.space24,
+            vertical: AppDimens.space8,
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 12),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(height: AppDimens.space12),
 
-              // Hero: Otis with Money Bowl + Headline
-              Row(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Image.asset(
-                    'assets/images/03_otis_money.png',
-                    height: 100,
-                    width: 100,
-                    fit: BoxFit.contain,
-                    errorBuilder: (_, _, _) => Container(
-                      height: 80,
-                      width: 80,
-                      decoration: const BoxDecoration(
-                        color: AppTheme.accentTurquoiseLight,
-                        shape: BoxShape.circle,
-                      ),
-                      child: const Icon(Icons.savings, color: AppTheme.primaryTeal, size: 36),
-                    ),
-                  ),
-                  const SizedBox(width: 16),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: const [
-                        Text(
-                          'Fund your account',
-                          style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.w800,
-                            color: AppTheme.primaryTeal,
-                            letterSpacing: -0.5,
-                          ),
-                        ),
-                        SizedBox(height: 6),
-                        Text(
-                          'Transfer to your LockBudget account to start your daily allowance.',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: AppTheme.textSecondary,
-                            height: 1.4,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-
-              const SizedBox(height: 28),
-
-              // Transfer Account Card (Dark Teal Card)
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(22),
-                decoration: BoxDecoration(
-                  color: AppTheme.primaryTeal,
-                  borderRadius: BorderRadius.circular(24),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        const Text(
-                          'TRANSFER ACCOUNT',
-                          style: TextStyle(
-                            fontSize: 11.5,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 0.8,
-                            color: Color(0xFF8BA5AA),
-                          ),
-                        ),
-                        ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.white,
-                            foregroundColor: AppTheme.primaryTeal,
-                            elevation: 0,
-                            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-                            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-                          ),
-                          onPressed: () {
-                            Clipboard.setData(const ClipboardData(text: '0234567890'));
-                            ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(
-                                content: Text('Account number copied!'),
-                                duration: Duration(seconds: 2),
+                      // Hero Header: Otis with Money Bowl + Headline
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Image.asset(
+                            'assets/images/03_otis_money.png',
+                            height: 90,
+                            width: 90,
+                            fit: BoxFit.contain,
+                            errorBuilder: (_, _, _) => Container(
+                              height: 80,
+                              width: 80,
+                              decoration: const BoxDecoration(
+                                color: AppColors.pillBackground,
+                                shape: BoxShape.circle,
                               ),
-                            );
-                          },
-                          child: const Text('Copy', style: TextStyle(fontWeight: FontWeight.w700, fontSize: 13)),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 10),
-                    const Text(
-                      '0234 567 890',
-                      style: TextStyle(
-                        fontSize: 32,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.white,
-                        letterSpacing: 0.5,
+                              child: const Icon(
+                                Icons.savings,
+                                color: AppColors.primaryTeal,
+                                size: 36,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(width: AppDimens.space16),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  'Fund your account',
+                                  style: GoogleFonts.sourceSans3(
+                                    fontSize: 24.0,
+                                    fontWeight: FontWeight.w800,
+                                    color: AppColors.primaryTeal,
+                                    letterSpacing: -0.5,
+                                  ),
+                                ),
+                                const SizedBox(height: AppDimens.space6),
+                                Text(
+                                  'Transfer to your LockBudget account to start your daily allowance.',
+                                  style: GoogleFonts.sourceSans3(
+                                    fontSize: 14.0,
+                                    fontWeight: FontWeight.w400,
+                                    color: AppColors.textSecondary,
+                                    height: 1.4,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                    ),
-                    const SizedBox(height: 14),
-                    const Divider(color: Color(0xFF1F4A54), height: 1),
-                    const SizedBox(height: 12),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
+
+                      const SizedBox(height: AppDimens.space28),
+
+                      // Transfer Account Card (Dark Teal Card #0E3039)
+                      Container(
+                        width: double.infinity,
+                        padding: const EdgeInsets.all(AppDimens.space20),
+                        decoration: BoxDecoration(
+                          color: AppColors.primaryTeal,
+                          borderRadius: BorderRadius.circular(AppDimens.radiusSheet),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x1A0E3039),
+                              offset: Offset(0, 8),
+                              blurRadius: 16.0,
+                            ),
+                          ],
+                        ),
+                        child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text('Name', style: TextStyle(fontSize: 11, color: Color(0xFF8BA5AA))),
-                            const SizedBox(height: 2),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'TRANSFER ACCOUNT',
+                                  style: GoogleFonts.sourceSans3(
+                                    fontSize: 11.5,
+                                    fontWeight: FontWeight.w700,
+                                    letterSpacing: 0.8,
+                                    color: const Color(0xFF8BA5AA),
+                                  ),
+                                ),
+                                GestureDetector(
+                                  onTap: () {
+                                    Clipboard.setData(const ClipboardData(text: '0234567890'));
+                                    ScaffoldMessenger.of(context).showSnackBar(
+                                      const SnackBar(
+                                        content: Text('Account number copied to clipboard!'),
+                                        duration: Duration(seconds: 2),
+                                      ),
+                                    );
+                                  },
+                                  child: Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      borderRadius: BorderRadius.circular(AppDimens.radiusFull),
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        const Icon(Icons.copy, size: 13, color: AppColors.primaryTeal),
+                                        const SizedBox(width: 4),
+                                        Text(
+                                          'Copy',
+                                          style: GoogleFonts.sourceSans3(
+                                            fontSize: 12.0,
+                                            fontWeight: FontWeight.w700,
+                                            color: AppColors.primaryTeal,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                            const SizedBox(height: AppDimens.space12),
+
+                            // Account Number
                             Text(
-                              userName,
-                              style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
+                              '0234 567 890',
+                              style: GoogleFonts.sourceSans3(
+                                fontSize: 28.0,
+                                fontWeight: FontWeight.w800,
+                                color: Colors.white,
+                                letterSpacing: 1.5,
+                              ),
+                            ),
+
+                            const SizedBox(height: AppDimens.space16),
+                            const Divider(color: Color(0xFF1D454F), thickness: 1.0),
+                            const SizedBox(height: AppDimens.space12),
+
+                            // Name & Bank Details Grid
+                            Row(
+                              children: [
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Name',
+                                        style: GoogleFonts.sourceSans3(
+                                          fontSize: 12.0,
+                                          color: const Color(0xFF8BA5AA),
+                                        ),
+                                      ),
+                                      const SizedBox(height: AppDimens.space2),
+                                      Text(
+                                        userName,
+                                        style: GoogleFonts.sourceSans3(
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Bank',
+                                        style: GoogleFonts.sourceSans3(
+                                          fontSize: 12.0,
+                                          color: const Color(0xFF8BA5AA),
+                                        ),
+                                      ),
+                                      const SizedBox(height: AppDimens.space2),
+                                      Text(
+                                        'Wema Bank',
+                                        style: GoogleFonts.sourceSans3(
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.w700,
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
                             ),
                           ],
                         ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            Text('Bank', style: TextStyle(fontSize: 11, color: Color(0xFF8BA5AA))),
-                            SizedBox(height: 2),
-                            Text(
-                              'Wema Bank',
-                              style: TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: Colors.white),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-
-              const SizedBox(height: 28),
-
-              // "What happens next"
-              const Text(
-                'What happens next',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
-                  color: AppTheme.primaryTeal,
-                ),
-              ),
-              const SizedBox(height: 14),
-
-              _buildStepItem(
-                number: '1',
-                text: 'Send money from your bank app to the account above.',
-              ),
-              const SizedBox(height: 12),
-              _buildStepItem(
-                number: '2',
-                text: 'Come back here so we can check for confirmation.',
-              ),
-
-              const Spacer(),
-
-              // Primary CTA: I have made the transfer
-              SizedBox(
-                width: double.infinity,
-                height: 54,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryTeal,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                  ),
-                  onPressed: () {
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      const SnackBar(
-                        content: Text('Checking transfer confirmation... Success!'),
-                        backgroundColor: AppTheme.primaryTeal,
                       ),
-                    );
-                    _navigateToDashboard(context);
-                  },
-                  child: const Text(
-                    'I have made the transfer',
-                    style: TextStyle(
-                      fontSize: 15.5,
-                      fontWeight: FontWeight.w700,
-                    ),
+
+                      const SizedBox(height: AppDimens.space28),
+
+                      // "What happens next?" step guide
+                      Text(
+                        'What happens next?',
+                        style: GoogleFonts.sourceSans3(
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.textPrimary,
+                        ),
+                      ),
+                      const SizedBox(height: AppDimens.space16),
+
+                      _buildNextStep(
+                        step: '1',
+                        description: 'Send money from your banking app to the account above.',
+                      ),
+                      const SizedBox(height: AppDimens.space12),
+                      _buildNextStep(
+                        step: '2',
+                        description: 'Come back here; spend tracking begins automatically.',
+                      ),
+
+                      const SizedBox(height: AppDimens.space24),
+                    ],
                   ),
                 ),
               ),
 
-              const SizedBox(height: 12),
-
-              // Secondary CTA: I will fund later
-              SizedBox(
-                width: double.infinity,
-                height: 54,
-                child: OutlinedButton(
-                  style: OutlinedButton.styleFrom(
-                    side: const BorderSide(color: Color(0xFFE2E8F0), width: 1.2),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                  ),
-                  onPressed: () => _navigateToDashboard(context),
-                  child: const Text(
-                    'I will fund later',
-                    style: TextStyle(
-                      fontSize: 15.5,
-                      fontWeight: FontWeight.w700,
-                      color: AppTheme.textPrimary,
-                    ),
-                  ),
-                ),
+              // Action Buttons
+              AppButton(
+                label: 'I have made the transfer',
+                onPressed: () => _navigateToDashboard(context),
+                variant: AppButtonVariant.primary,
               ),
-
-              const SizedBox(height: 12),
+              const SizedBox(height: AppDimens.space12),
+              AppButton(
+                label: 'I will fund later',
+                onPressed: () => _navigateToDashboard(context),
+                variant: AppButtonVariant.secondary,
+              ),
+              const SizedBox(height: AppDimens.space8),
             ],
           ),
         ),
@@ -290,35 +320,36 @@ class FirstFundingPromptScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStepItem({required String number, required String text}) {
+  Widget _buildNextStep({required String step, required String description}) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Container(
           width: 24,
           height: 24,
-          decoration: BoxDecoration(
-            color: const Color(0xFFE2F4F2),
+          decoration: const BoxDecoration(
+            color: AppColors.pillBackground,
             shape: BoxShape.circle,
           ),
           child: Center(
             child: Text(
-              number,
-              style: const TextStyle(
-                fontSize: 12,
-                fontWeight: FontWeight.w800,
-                color: AppTheme.primaryTeal,
+              step,
+              style: GoogleFonts.sourceSans3(
+                fontSize: 12.5,
+                fontWeight: FontWeight.w700,
+                color: AppColors.primaryTeal,
               ),
             ),
           ),
         ),
-        const SizedBox(width: 12),
+        const SizedBox(width: AppDimens.space12),
         Expanded(
           child: Text(
-            text,
-            style: const TextStyle(
-              fontSize: 14,
-              color: AppTheme.textSecondary,
+            description,
+            style: GoogleFonts.sourceSans3(
+              fontSize: 14.0,
+              fontWeight: FontWeight.w400,
+              color: AppColors.textSecondary,
               height: 1.35,
             ),
           ),

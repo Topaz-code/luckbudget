@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
-import '../../theme/app_theme.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:intl/intl.dart';
+import '../../core/theme/app_colors.dart';
+import '../../core/theme/app_dimens.dart';
+import '../../core/widgets/app_button.dart';
 import 'first_funding_prompt_screen.dart';
 
+/// Screen 2: Monthly Budget Setup & Allocation (Figma `Group 3` / `32:4`)
 class OnboardingBudgetSetupScreen extends StatefulWidget {
   final String userName;
   final VoidCallback? onComplete;
@@ -17,26 +22,27 @@ class OnboardingBudgetSetupScreen extends StatefulWidget {
 }
 
 class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScreen> {
+  final _currencyFormat = NumberFormat('#,##0', 'en_US');
   double _monthlyIncome = 50000;
   final List<double> _incomeChips = [50000, 150000, 300000];
 
   final List<Map<String, dynamic>> _fixedExpenses = [
-    {'title': 'Food', 'amount': 32000.0},
-    {'title': 'Internet', 'amount': 2000.0},
-    {'title': 'Transportation', 'amount': 4000.0},
-    {'title': 'Netflix', 'amount': 0.0},
-    {'title': 'Debt', 'amount': 5000.0},
+    {'title': 'Food', 'amount': 32000.0, 'icon': Icons.restaurant_outlined},
+    {'title': 'Internet', 'amount': 2000.0, 'icon': Icons.wifi_outlined},
+    {'title': 'Transportation', 'amount': 4000.0, 'icon': Icons.directions_bus_outlined},
+    {'title': 'Netflix', 'amount': 0.0, 'icon': Icons.movie_outlined},
+    {'title': 'Debt', 'amount': 5000.0, 'icon': Icons.credit_card_outlined},
   ];
 
   final List<Map<String, dynamic>> _variableExpenses = [
-    {'title': 'Miscellaneous', 'amount': 0.0},
-    {'title': 'Gift', 'amount': 0.0},
+    {'title': 'Miscellaneous', 'amount': 0.0, 'icon': Icons.category_outlined},
+    {'title': 'Gift', 'amount': 0.0, 'icon': Icons.card_giftcard_outlined},
   ];
 
   double get _totalFixed => _fixedExpenses.fold(0.0, (sum, item) => sum + (item['amount'] as double));
   double get _totalVariable => _variableExpenses.fold(0.0, (sum, item) => sum + (item['amount'] as double));
   double get _totalExpenses => _totalFixed + _totalVariable;
-  double get _remaining => _monthlyIncome - _totalExpenses;
+  double get _remaining => (_monthlyIncome - _totalExpenses).clamp(0.0, double.infinity);
 
   void _handleLockItIn() {
     Navigator.push(
@@ -58,15 +64,15 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.menu, color: AppTheme.primaryTeal),
+          icon: const Icon(Icons.arrow_back_ios_new, size: 20, color: AppColors.primaryTeal),
           onPressed: () => Navigator.pop(context),
         ),
-        title: const Text(
+        title: Text(
           'Your monthly budget',
-          style: TextStyle(
-            fontSize: 16,
+          style: GoogleFonts.sourceSans3(
+            fontSize: 16.0,
             fontWeight: FontWeight.w700,
-            color: AppTheme.primaryTeal,
+            color: AppColors.primaryTeal,
           ),
         ),
         centerTitle: true,
@@ -76,53 +82,61 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
           children: [
             Expanded(
               child: SingleChildScrollView(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 8),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimens.space24,
+                  vertical: AppDimens.space8,
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Headline
-                    const Text(
+                    // Headline & Subtitle
+                    Text(
                       'Fill this in, feel good',
-                      style: TextStyle(
-                        fontSize: 28,
+                      style: GoogleFonts.sourceSans3(
+                        fontSize: 27.0,
                         fontWeight: FontWeight.w800,
-                        color: AppTheme.primaryTeal,
+                        color: AppColors.primaryTeal,
                         letterSpacing: -0.5,
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    const Text(
+                    const SizedBox(height: AppDimens.space6),
+                    Text(
                       'Pre-filled from the student plan. Tweak anything. Takes 30 seconds.',
-                      style: TextStyle(
+                      style: GoogleFonts.sourceSans3(
                         fontSize: 14.5,
-                        color: AppTheme.textSecondary,
+                        fontWeight: FontWeight.w400,
+                        color: AppColors.textSecondary,
                         height: 1.4,
                       ),
                     ),
 
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppDimens.space24),
 
-                    // Income Highlight Box
+                    // Income Highlight Box (Figma `#F1F5F5` container)
                     Container(
                       width: double.infinity,
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: AppDimens.space20,
+                        vertical: AppDimens.space16,
+                      ),
                       decoration: BoxDecoration(
-                        color: const Color(0xFFF1F5F5),
-                        borderRadius: BorderRadius.circular(18),
+                        color: AppColors.background,
+                        borderRadius: BorderRadius.circular(AppDimens.radiusCard),
+                        border: Border.all(color: AppColors.borderLight, width: 1.0),
                       ),
                       child: Text(
-                        '₦ ${_monthlyIncome.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},')}',
-                        style: const TextStyle(
-                          fontSize: 26,
+                        '₦ ${_currencyFormat.format(_monthlyIncome)}',
+                        style: GoogleFonts.sourceSans3(
+                          fontSize: 26.0,
                           fontWeight: FontWeight.w800,
-                          color: AppTheme.primaryTeal,
+                          color: AppColors.primaryTeal,
                         ),
                       ),
                     ),
 
-                    const SizedBox(height: 12),
+                    const SizedBox(height: AppDimens.space12),
 
-                    // Income Quick Chips
+                    // Income Quick Preset Chips (₦50,000, ₦150,000, ₦300,000)
                     Row(
                       children: _incomeChips.map((val) {
                         final isSel = _monthlyIncome == val;
@@ -130,23 +144,23 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                           child: GestureDetector(
                             onTap: () => setState(() => _monthlyIncome = val),
                             child: Container(
-                              margin: const EdgeInsets.symmetric(horizontal: 4),
-                              padding: const EdgeInsets.symmetric(vertical: 10),
+                              margin: const EdgeInsets.symmetric(horizontal: AppDimens.space4),
+                              padding: const EdgeInsets.symmetric(vertical: AppDimens.space10),
                               decoration: BoxDecoration(
-                                color: isSel ? AppTheme.accentTurquoiseLight : Colors.white,
-                                borderRadius: BorderRadius.circular(20),
+                                color: isSel ? AppColors.pillBackground : Colors.white,
+                                borderRadius: BorderRadius.circular(AppDimens.radiusFull),
                                 border: Border.all(
-                                  color: isSel ? AppTheme.accentTurquoise : const Color(0xFFE2E8F0),
+                                  color: isSel ? AppColors.accentTurquoise : AppColors.borderLight,
                                   width: 1.2,
                                 ),
                               ),
                               child: Center(
                                 child: Text(
-                                  '₦ ${val.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},')}',
-                                  style: TextStyle(
+                                  '₦ ${_currencyFormat.format(val)}',
+                                  style: GoogleFonts.sourceSans3(
                                     fontSize: 12.5,
                                     fontWeight: isSel ? FontWeight.w700 : FontWeight.w600,
-                                    color: isSel ? AppTheme.primaryTeal : AppTheme.textPrimary,
+                                    color: isSel ? AppColors.primaryTeal : AppColors.textPrimary,
                                   ),
                                 ),
                               ),
@@ -156,139 +170,116 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                       }).toList(),
                     ),
 
-                    const SizedBox(height: 28),
+                    const SizedBox(height: AppDimens.space28),
 
                     // Fixed Expenses Header
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Expanded(
+                        Expanded(
                           child: Text(
                             'Fixed expenses',
-                            style: TextStyle(
-                              fontSize: 15,
+                            style: GoogleFonts.sourceSans3(
+                              fontSize: 15.0,
                               fontWeight: FontWeight.w700,
-                              color: AppTheme.textPrimary,
+                              color: AppColors.textPrimary,
                             ),
                           ),
                         ),
                         Text(
-                          'Total · ₦ ${_totalFixed.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},')}',
-                          style: const TextStyle(
-                            fontSize: 13,
+                          'Total · ₦ ${_currencyFormat.format(_totalFixed)}',
+                          style: GoogleFonts.sourceSans3(
+                            fontSize: 13.0,
                             fontWeight: FontWeight.w600,
-                            color: AppTheme.textSecondary,
+                            color: AppColors.textSecondary,
                           ),
                         ),
                       ],
                     ),
 
-                    const SizedBox(height: 10),
+                    const SizedBox(height: AppDimens.space10),
 
                     // Fixed Expenses Card
                     _buildExpenseGroupCard(_fixedExpenses),
 
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppDimens.space24),
 
                     // Variable Expenses Header
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        const Expanded(
+                        Expanded(
                           child: Text(
                             'Variable expenses',
-                            style: TextStyle(
-                              fontSize: 15,
+                            style: GoogleFonts.sourceSans3(
+                              fontSize: 15.0,
                               fontWeight: FontWeight.w700,
-                              color: AppTheme.textPrimary,
+                              color: AppColors.textPrimary,
                             ),
                           ),
                         ),
                         Text(
-                          'Total · ₦ ${_totalVariable.toInt()}',
-                          style: const TextStyle(
-                            fontSize: 13,
+                          'Total · ₦ ${_currencyFormat.format(_totalVariable)}',
+                          style: GoogleFonts.sourceSans3(
+                            fontSize: 13.0,
                             fontWeight: FontWeight.w600,
-                            color: AppTheme.textSecondary,
+                            color: AppColors.textSecondary,
                           ),
                         ),
                       ],
                     ),
 
-                    const SizedBox(height: 10),
+                    const SizedBox(height: AppDimens.space10),
 
                     // Variable Expenses Card
                     _buildExpenseGroupCard(_variableExpenses),
 
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppDimens.space20),
 
-                    // Totals Summary Card
+                    // Summary Card: Total Income / Total Expenses / Remaining
                     Container(
-                      padding: const EdgeInsets.all(18),
+                      padding: const EdgeInsets.all(AppDimens.space16),
                       decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(20),
-                        border: Border.all(color: const Color(0xFFE2E8F0)),
+                        color: AppColors.background,
+                        borderRadius: BorderRadius.circular(AppDimens.radiusCard),
+                        border: Border.all(color: AppColors.borderLight, width: 1.0),
                       ),
                       child: Column(
                         children: [
+                          _buildSummaryRow('Total income', _monthlyIncome, isBold: false),
+                          const SizedBox(height: AppDimens.space8),
+                          _buildSummaryRow('Total expenses', _totalExpenses, isBold: false),
+                          const Divider(height: AppDimens.space20, color: AppColors.borderLight),
                           _buildSummaryRow(
-                            'Total income',
-                            '₦ ${_monthlyIncome.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},')}',
+                            'Remaining',
+                            _remaining,
                             isBold: true,
-                          ),
-                          const SizedBox(height: 10),
-                          _buildSummaryRow(
-                            'Total expenses',
-                            '₦ ${_totalExpenses.toInt().toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},')}',
-                          ),
-                          const SizedBox(height: 10),
-                          Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-                            decoration: BoxDecoration(
-                              color: AppTheme.accentTurquoiseLight,
-                              borderRadius: BorderRadius.circular(10),
-                            ),
-                            child: _buildSummaryRow(
-                              'Remaining',
-                              '₦ ${_remaining.toInt()}',
-                              isBold: true,
-                            ),
+                            highlightColor: _remaining > 0 ? AppColors.successGreen : AppColors.primaryTeal,
                           ),
                         ],
                       ),
                     ),
 
-                    const SizedBox(height: 24),
+                    const SizedBox(height: AppDimens.space24),
                   ],
                 ),
               ),
             ),
 
-            // Bottom CTA: Lock it in.
-            Padding(
-              padding: const EdgeInsets.all(20),
-              child: SizedBox(
-                width: double.infinity,
-                height: 54,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.primaryTeal,
-                    foregroundColor: Colors.white,
-                    elevation: 0,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(28),
-                    ),
-                  ),
-                  onPressed: _handleLockItIn,
-                  child: const Text(
-                    'Lock it in.',
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                ),
+            // Bottom Fixed Action: "Lock it in."
+            Container(
+              padding: const EdgeInsets.symmetric(
+                horizontal: AppDimens.space24,
+                vertical: AppDimens.space16,
+              ),
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                border: Border(top: BorderSide(color: AppColors.borderLight, width: 1.0)),
+              ),
+              child: AppButton(
+                label: 'Lock it in.',
+                onPressed: _handleLockItIn,
+                variant: AppButtonVariant.primary,
               ),
             ),
           ],
@@ -301,74 +292,71 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
     return Container(
       decoration: BoxDecoration(
         color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFFE2E8F0)),
+        borderRadius: BorderRadius.circular(AppDimens.radiusCard),
+        border: Border.all(color: AppColors.borderLight, width: 1.2),
       ),
       child: Column(
-        children: items.map((item) {
-          final isLast = items.indexOf(item) == items.length - 1;
-          final amt = (item['amount'] as double).toInt();
+        children: List.generate(items.length, (idx) {
+          final item = items[idx];
+          final isLast = idx == items.length - 1;
           return Column(
             children: [
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: AppDimens.space16,
+                  vertical: AppDimens.space12,
+                ),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      item['title'] as String,
-                      style: const TextStyle(
-                        fontSize: 14.5,
-                        fontWeight: FontWeight.w600,
-                        color: AppTheme.textPrimary,
+                    Icon(item['icon'] as IconData, size: 18, color: AppColors.accentTurquoise),
+                    const SizedBox(width: AppDimens.space12),
+                    Expanded(
+                      child: Text(
+                        item['title'] as String,
+                        style: GoogleFonts.sourceSans3(
+                          fontSize: 14.5,
+                          fontWeight: FontWeight.w600,
+                          color: AppColors.textPrimary,
+                        ),
                       ),
                     ),
-                    Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 6),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFF1F5F5),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Text(
-                        amt.toString().replaceAllMapped(RegExp(r'(\d{1,3})(?=(\d{3})+(?!\d))'), (m) => '${m[1]},'),
-                        style: const TextStyle(
-                          fontSize: 14,
-                          fontWeight: FontWeight.w700,
-                          color: AppTheme.primaryTeal,
-                        ),
+                    Text(
+                      '₦ ${_currencyFormat.format(item['amount'])}',
+                      style: GoogleFonts.sourceSans3(
+                        fontSize: 14.5,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textPrimary,
                       ),
                     ),
                   ],
                 ),
               ),
-              if (!isLast) const Divider(height: 1, indent: 16, endIndent: 16, color: Color(0xFFE2E8F0)),
+              if (!isLast) const Divider(height: 1, color: AppColors.borderLight, indent: 46),
             ],
           );
-        }).toList(),
+        }),
       ),
     );
   }
 
-  Widget _buildSummaryRow(String label, String value, {bool isBold = false}) {
+  Widget _buildSummaryRow(String label, double amount, {bool isBold = false, Color? highlightColor}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Expanded(
-          child: Text(
-            label,
-            style: TextStyle(
-              fontSize: 14,
-              fontWeight: isBold ? FontWeight.w700 : FontWeight.w500,
-              color: AppTheme.primaryTeal,
-            ),
+        Text(
+          label,
+          style: GoogleFonts.sourceSans3(
+            fontSize: 14.0,
+            fontWeight: isBold ? FontWeight.w700 : FontWeight.w500,
+            color: isBold ? AppColors.textPrimary : AppColors.textSecondary,
           ),
         ),
         Text(
-          value,
-          style: TextStyle(
-            fontSize: 15,
+          '₦ ${_currencyFormat.format(amount)}',
+          style: GoogleFonts.sourceSans3(
+            fontSize: 14.5,
             fontWeight: isBold ? FontWeight.w800 : FontWeight.w600,
-            color: AppTheme.primaryTeal,
+            color: highlightColor ?? AppColors.textPrimary,
           ),
         ),
       ],
