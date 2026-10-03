@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_dimens.dart';
+import '../../core/theme/app_typography.dart';
 import '../../core/widgets/app_button.dart';
 import '../main_navigation_shell.dart';
 
@@ -53,9 +53,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
             const SizedBox(width: AppDimens.space8),
             Text(
               'Lockbudget',
-              style: GoogleFonts.sourceSans3(
+              style: AppTypography.titleMedium.copyWith(
                 fontSize: 17.0,
-                fontWeight: FontWeight.w800,
                 color: AppColors.primaryTeal,
               ),
             ),
@@ -108,9 +107,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   'Fund your account',
-                                  style: GoogleFonts.sourceSans3(
+                                  style: AppTypography.headlineLarge.copyWith(
                                     fontSize: 24.0,
-                                    fontWeight: FontWeight.w800,
                                     color: AppColors.primaryTeal,
                                     letterSpacing: -0.5,
                                   ),
@@ -118,9 +116,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                 const SizedBox(height: AppDimens.space6),
                                 Text(
                                   'Transfer to your LockBudget account to start your daily allowance.',
-                                  style: GoogleFonts.sourceSans3(
-                                    fontSize: 14.0,
-                                    fontWeight: FontWeight.w400,
+                                  style: AppTypography.bodyMedium.copyWith(
                                     color: AppColors.textSecondary,
                                     height: 1.4,
                                   ),
@@ -156,9 +152,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   'TRANSFER ACCOUNT',
-                                  style: GoogleFonts.sourceSans3(
-                                    fontSize: 11.5,
-                                    fontWeight: FontWeight.w700,
+                                  style: AppTypography.captionSmallBold.copyWith(
                                     letterSpacing: 0.8,
                                     color: const Color(0xFF8BA5AA),
                                   ),
@@ -181,9 +175,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                     ),
                                     child: Text(
                                       'Copy',
-                                      style: GoogleFonts.sourceSans3(
+                                      style: AppTypography.bodySmallBold.copyWith(
                                         fontSize: 13.0,
-                                        fontWeight: FontWeight.w700,
                                         color: AppColors.primaryTeal,
                                       ),
                                     ),
@@ -197,9 +190,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
                             // Account Number
                             Text(
                               '0234 567 890',
-                              style: GoogleFonts.sourceSans3(
+                              style: AppTypography.displayHero.copyWith(
                                 fontSize: 28.0,
-                                fontWeight: FontWeight.w800,
                                 color: Colors.white,
                                 letterSpacing: 1.5,
                               ),
@@ -218,7 +210,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Name',
-                                        style: GoogleFonts.sourceSans3(
+                                        style: AppTypography.captionRegular.copyWith(
                                           fontSize: 12.0,
                                           color: const Color(0xFF8BA5AA),
                                         ),
@@ -226,9 +218,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                       const SizedBox(height: AppDimens.space2),
                                       Text(
                                         userName,
-                                        style: GoogleFonts.sourceSans3(
-                                          fontSize: 14.0,
-                                          fontWeight: FontWeight.w700,
+                                        style: AppTypography.bodyMediumBold.copyWith(
                                           color: Colors.white,
                                         ),
                                       ),
@@ -241,7 +231,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                     children: [
                                       Text(
                                         'Bank',
-                                        style: GoogleFonts.sourceSans3(
+                                        style: AppTypography.captionRegular.copyWith(
                                           fontSize: 12.0,
                                           color: const Color(0xFF8BA5AA),
                                         ),
@@ -249,9 +239,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                       const SizedBox(height: AppDimens.space2),
                                       Text(
                                         'Partner bank',
-                                        style: GoogleFonts.sourceSans3(
-                                          fontSize: 14.0,
-                                          fontWeight: FontWeight.w700,
+                                        style: AppTypography.bodyMediumBold.copyWith(
                                           color: Colors.white,
                                         ),
                                       ),
@@ -269,9 +257,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
                       // "What happens next" step guide
                       Text(
                         'What happens next',
-                        style: GoogleFonts.sourceSans3(
+                        style: AppTypography.titleSmall.copyWith(
                           fontSize: 16.0,
-                          fontWeight: FontWeight.w700,
                           color: AppColors.textPrimary,
                         ),
                       ),
@@ -327,9 +314,8 @@ class FirstFundingPromptScreen extends StatelessWidget {
           child: Center(
             child: Text(
               step,
-              style: GoogleFonts.sourceSans3(
+              style: AppTypography.captionSmallBold.copyWith(
                 fontSize: 12.5,
-                fontWeight: FontWeight.w700,
                 color: AppColors.primaryTeal,
               ),
             ),
@@ -339,9 +325,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
         Expanded(
           child: Text(
             description,
-            style: GoogleFonts.sourceSans3(
-              fontSize: 14.0,
-              fontWeight: FontWeight.w400,
+            style: AppTypography.bodyMedium.copyWith(
               color: AppColors.textSecondary,
               height: 1.35,
             ),

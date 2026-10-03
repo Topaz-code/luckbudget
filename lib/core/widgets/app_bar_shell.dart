@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_colors.dart';
+import '../theme/app_typography.dart';
 
 class AppBarShell extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -37,11 +37,7 @@ class AppBarShell extends StatelessWidget implements PreferredSizeWidget {
               : null),
       title: Text(
         title,
-        style: GoogleFonts.sourceSans3(
-          fontSize: 18.0,
-          fontWeight: FontWeight.w700,
-          color: AppColors.textPrimary,
-        ),
+        style: AppTypography.titleMedium,
       ),
       actions: actions,
     );

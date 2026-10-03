@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_dimens.dart';
+import '../theme/app_typography.dart';
 import 'app_button.dart';
 
 class AppDialog extends StatelessWidget {
@@ -71,9 +71,7 @@ class AppDialog extends StatelessWidget {
             Text(
               title,
               textAlign: TextAlign.center,
-              style: GoogleFonts.sourceSans3(
-                fontSize: 18.0,
-                fontWeight: FontWeight.w700,
+              style: AppTypography.titleMedium.copyWith(
                 color: isDestructive ? AppColors.dangerRed : AppColors.textPrimary,
               ),
             ),
@@ -81,9 +79,7 @@ class AppDialog extends StatelessWidget {
             Text(
               message,
               textAlign: TextAlign.center,
-              style: GoogleFonts.sourceSans3(
-                fontSize: 14.5,
-                fontWeight: FontWeight.w400,
+              style: AppTypography.bodyMedium.copyWith(
                 color: AppColors.textSecondary,
                 height: 1.4,
               ),

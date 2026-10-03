@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'app_colors.dart';
 import 'app_dimens.dart';
 import 'app_typography.dart';
@@ -31,10 +30,9 @@ class AppTheme {
   static const Color dangerRed = AppColors.dangerRed;
 
   static ThemeData get lightTheme {
-    final baseTextTheme = GoogleFonts.sourceSans3TextTheme();
-
     return ThemeData(
       useMaterial3: true,
+      fontFamily: AppTypography.fontFamily,
       scaffoldBackgroundColor: AppColors.background,
       primaryColor: AppColors.primaryTeal,
       colorScheme: const ColorScheme.light(
@@ -44,7 +42,7 @@ class AppTheme {
         onSurface: AppColors.textPrimary,
         error: AppColors.dangerRed,
       ),
-      textTheme: baseTextTheme.copyWith(
+      textTheme: const TextTheme(
         displayLarge: AppTypography.displayHero,
         headlineMedium: AppTypography.headlineLarge,
         titleLarge: AppTypography.titleMedium,
@@ -72,10 +70,7 @@ class AppTheme {
             borderRadius: AppDimens.borderRadiusButton,
           ),
           elevation: 0,
-          textStyle: GoogleFonts.sourceSans3(
-            fontSize: 15.0,
-            fontWeight: FontWeight.w700,
-          ),
+          textStyle: AppTypography.bodyLargeBold,
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
@@ -86,10 +81,7 @@ class AppTheme {
           shape: const RoundedRectangleBorder(
             borderRadius: AppDimens.borderRadiusButton,
           ),
-          textStyle: GoogleFonts.sourceSans3(
-            fontSize: 15.0,
-            fontWeight: FontWeight.w700,
-          ),
+          textStyle: AppTypography.bodyLargeBold,
         ),
       ),
       cardTheme: const CardThemeData(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_dimens.dart';
+import '../../core/theme/app_typography.dart';
 import '../../core/widgets/app_button.dart';
 import 'onboarding_budget_setup_screen.dart';
 
@@ -76,9 +77,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                       const SizedBox(width: AppDimens.space8),
                       Text(
                         'Lockbudget',
-                        style: TextStyle(fontFamily: 'SourceSans3', 
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.w800,
+                        style: AppTypography.titleMedium.copyWith(
                           color: AppColors.primaryTeal,
                           letterSpacing: -0.3,
                         ),
@@ -89,9 +88,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     onPressed: widget.onLoginTap ?? _handleContinue,
                     child: Text(
                       'Login',
-                      style: TextStyle(fontFamily: 'SourceSans3', 
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.w700,
+                      style: AppTypography.bodyLargeBold.copyWith(
                         color: AppColors.primaryTeal,
                       ),
                     ),
@@ -104,9 +101,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
               // Title & Subtitle
               Text(
                 'Let’s get to know you!',
-                style: TextStyle(fontFamily: 'SourceSans3', 
-                  fontSize: 27.0,
-                  fontWeight: FontWeight.w800,
+                style: AppTypography.displayHero.copyWith(
                   color: AppColors.primaryTeal,
                   letterSpacing: -0.5,
                 ),
@@ -114,9 +109,8 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
               const SizedBox(height: AppDimens.space6),
               Text(
                 'Introduce yourself.',
-                style: TextStyle(fontFamily: 'SourceSans3', 
+                style: AppTypography.bodyLarge.copyWith(
                   fontSize: 15.5,
-                  fontWeight: FontWeight.w500,
                   color: AppColors.textSecondary,
                 ),
               ),
@@ -161,9 +155,8 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: AppDimens.space12),
                     child: Text(
                       'or',
-                      style: TextStyle(fontFamily: 'SourceSans3', 
+                      style: AppTypography.bodySmall.copyWith(
                         fontSize: 13.0,
-                        fontWeight: FontWeight.w500,
                         color: AppColors.textMuted,
                       ),
                     ),
@@ -195,13 +188,12 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                         width: 20,
                         height: 20,
                         decoration: const BoxDecoration(shape: BoxShape.circle),
-                        child: const Center(
+                        child: Center(
                           child: Text(
                             'G',
-                            style: TextStyle(
-                              fontSize: 15,
+                            style: AppTypography.bodyLargeBold.copyWith(
+                              color: const Color(0xFF4285F4),
                               fontWeight: FontWeight.w900,
-                              color: Color(0xFF4285F4),
                             ),
                           ),
                         ),
@@ -209,9 +201,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                       const SizedBox(width: AppDimens.space10),
                       Text(
                         'Continue with Google',
-                        style: TextStyle(fontFamily: 'SourceSans3', 
-                          fontSize: 15.0,
-                          fontWeight: FontWeight.w700,
+                        style: AppTypography.bodyLargeBold.copyWith(
                           color: AppColors.textPrimary,
                         ),
                       ),
@@ -227,9 +217,8 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                 child: Text(
                   'We’ll never share or sell your data. · Bank-level security.',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontFamily: 'SourceSans3', 
+                  style: AppTypography.captionRegular.copyWith(
                     fontSize: 12.0,
-                    fontWeight: FontWeight.w500,
                     color: AppColors.textMuted,
                   ),
                 ),
@@ -269,9 +258,8 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
         children: [
           Text(
             label,
-            style: TextStyle(fontFamily: 'SourceSans3', 
+            style: AppTypography.captionSmallBold.copyWith(
               fontSize: 12.0,
-              fontWeight: FontWeight.w600,
               color: AppColors.textSecondary,
             ),
           ),
@@ -279,11 +267,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
           TextField(
             controller: controller,
             keyboardType: keyboardType,
-            style: TextStyle(fontFamily: 'SourceSans3', 
-              fontSize: 15.0,
-              fontWeight: FontWeight.w600,
-              color: AppColors.textPrimary,
-            ),
+            style: AppTypography.bodyLargeBold,
             decoration: const InputDecoration(
               isDense: true,
               border: InputBorder.none,

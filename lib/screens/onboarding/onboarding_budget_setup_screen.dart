@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_dimens.dart';
+import '../../core/theme/app_typography.dart';
 import '../../core/widgets/app_button.dart';
 import 'first_funding_prompt_screen.dart';
 
@@ -68,9 +68,8 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
         ),
         title: Text(
           'Your monthly budget',
-          style: GoogleFonts.sourceSans3(
+          style: AppTypography.titleSmall.copyWith(
             fontSize: 16.0,
-            fontWeight: FontWeight.w700,
             color: AppColors.primaryTeal,
           ),
         ),
@@ -91,9 +90,7 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                     // Headline & Subtitle
                     Text(
                       'Fill this in, feel good',
-                      style: GoogleFonts.sourceSans3(
-                        fontSize: 27.0,
-                        fontWeight: FontWeight.w800,
+                      style: AppTypography.displayHero.copyWith(
                         color: AppColors.primaryTeal,
                         letterSpacing: -0.5,
                       ),
@@ -101,9 +98,8 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                     const SizedBox(height: AppDimens.space6),
                     Text(
                       'Pre-filled from the student plan. Tweak anything. Takes 30 seconds.',
-                      style: GoogleFonts.sourceSans3(
+                      style: AppTypography.bodyMedium.copyWith(
                         fontSize: 14.5,
-                        fontWeight: FontWeight.w400,
                         color: AppColors.textSecondary,
                         height: 1.4,
                       ),
@@ -125,9 +121,8 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                       ),
                       child: Text(
                         '₦ ${_currencyFormat.format(_monthlyIncome)}',
-                        style: GoogleFonts.sourceSans3(
+                        style: AppTypography.displayHero.copyWith(
                           fontSize: 26.0,
-                          fontWeight: FontWeight.w800,
                           color: AppColors.primaryTeal,
                         ),
                       ),
@@ -142,18 +137,13 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                         Expanded(
                           child: Text(
                             'Fixed expenses',
-                            style: GoogleFonts.sourceSans3(
-                              fontSize: 15.0,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.textPrimary,
-                            ),
+                            style: AppTypography.bodyLargeBold,
                           ),
                         ),
                         Text(
                           'Total · ₦ ${_currencyFormat.format(_totalFixed)}',
-                          style: GoogleFonts.sourceSans3(
+                          style: AppTypography.captionSmallBold.copyWith(
                             fontSize: 13.0,
-                            fontWeight: FontWeight.w600,
                             color: AppColors.textSecondary,
                           ),
                         ),
@@ -174,18 +164,13 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                         Expanded(
                           child: Text(
                             'Variable expenses',
-                            style: GoogleFonts.sourceSans3(
-                              fontSize: 15.0,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.textPrimary,
-                            ),
+                            style: AppTypography.bodyLargeBold,
                           ),
                         ),
                         Text(
                           'Total · ₦ ${_currencyFormat.format(_totalVariable)}',
-                          style: GoogleFonts.sourceSans3(
+                          style: AppTypography.captionSmallBold.copyWith(
                             fontSize: 13.0,
-                            fontWeight: FontWeight.w600,
                             color: AppColors.textSecondary,
                           ),
                         ),
@@ -268,11 +253,7 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                   Expanded(
                     child: Text(
                       item['title'] as String,
-                      style: GoogleFonts.sourceSans3(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.textPrimary,
-                      ),
+                      style: AppTypography.bodyLarge,
                     ),
                   ),
                   Container(
@@ -283,9 +264,7 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                     ),
                     child: Text(
                       _currencyFormat.format(item['amount']),
-                      style: GoogleFonts.sourceSans3(
-                        fontSize: 14.0,
-                        fontWeight: FontWeight.w700,
+                      style: AppTypography.bodyMediumBold.copyWith(
                         color: AppColors.primaryTeal,
                       ),
                     ),
@@ -306,17 +285,14 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
       children: [
         Text(
           label,
-          style: GoogleFonts.sourceSans3(
-            fontSize: 14.0,
-            fontWeight: isBold ? FontWeight.w700 : FontWeight.w500,
+          style: (isBold ? AppTypography.bodyMediumBold : AppTypography.bodyMedium).copyWith(
             color: isBold ? AppColors.textPrimary : AppColors.textSecondary,
           ),
         ),
         Text(
           '₦ ${_currencyFormat.format(amount)}',
-          style: GoogleFonts.sourceSans3(
+          style: (isBold ? AppTypography.bodyLargeBold : AppTypography.bodyLarge).copyWith(
             fontSize: 14.5,
-            fontWeight: isBold ? FontWeight.w800 : FontWeight.w600,
             color: highlightColor ?? AppColors.textPrimary,
           ),
         ),

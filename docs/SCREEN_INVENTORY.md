@@ -8,26 +8,44 @@
 
 ## 1. Executive Reconciliation: The "~122 Screens" Count
 
-The prompt requested reconciling the stated **~122 screens** with the discovered count of top-level boards and frames.
+The prompt requested reconciling the stated **~122 screens** with the discovered count of top-level boards, frames, and sub-states.
 
-### Precise Breakdown:
-1. **Single-Screen Mobile Boards (VERIFIED):**
-   * **74 standalone screen frames** (base viewport `390x844` or extended scroll height `--full` versions `390x919` to `390x1446`).
-2. **Onboarding Screen Groups (VERIFIED):**
-   * **2 critical onboarding screens** (`Group 4` Intro / Welcome, and `Group 3` Monthly Budget Setup) plus `Group` (Splash / Illustration Artboard).
-3. **Compound Artboard Flows (VERIFIED):**
-   * **7 compound artboards** (`2552x870px` each): `failure_states_all 1`, `emergency_all 1`, `profile_account_all 1`, `offline_all 1`, `quicksend_internet_all 1`, `quicksend_food_all 1`, `help_trace_all 1`.
-   * In Figma, each `2552px` wide artboard displays **6 discrete screen states / variants** arranged side-by-side ($6 \times 390\text{px} + \text{spacing} = 2552\text{px}$).
-   * $7 \times 6 = \mathbf{42\text{ discrete sub-screen states}}$.
-4. **Modal Bottom Sheets & Overlays (VERIFIED):**
-   * **4 interactive overlay sheets / dialogs**: Top-up Bottom Sheet, Transaction Detail Modal Sheet, Profile Slide Window Sheet, and Edge Case Failure Dialog.
+### Exact Mathematical Reconciliation:
+Every screen in the design system has been enumerated and visually verified against `lockbudget.penpot` and the canonical 3x ground truth render strips in `figma-export/figma_import/`:
 
-$$\text{Total Effective Screens/States} = (74 - 7\text{ compounds}) + 3\text{ onboarding} + 42\text{ compound states} + 4\text{ overlays} = \mathbf{116 \text{ to } 122\text{ screens}}.$$
+1. **Top-Level Canvas Entities in Penpot (VERIFIED = 82):**
+   * **80 frame entities** + **2 root screen groups** (`Group 4` Intro, `Group 3` Budget Setup) = **82 entities**.
+   
+2. **Breakdown of Top-Level Entities (82):**
+   * **Obsolete V1 Vector Drafts (8 frames):** `delete-account-confirmation 1`, `help-support 1`, `notification-settings 1`, `personal-bank-account 1`, `profile-window 1`, `security-settings 1`, `settings 1`, `user-profile 1`. (Superseded by canonical V2 live-text implementations).
+   * **Extended `--full` Scroll Variants (10 frames):** Vertical scroll canvas extensions for existing screens (`home-dashboard--full 1`, `budget--full 1`, `budget-recap--full 1`, `save-goal-setup--full 1`, `save-period-setup--full 1`, `user-profile--full 1`, `profile-window--full 1`, `settings--full 1`, `activity-detail-failed--full 1`, `activity-detail-sync-delayed--full 1`). These are handled via scroll containers (`SingleChildScrollView` / `ListView`) in Flutter, not separate routes.
+   * **Compound Canvas Boards (7 strips):** `failure_states_all 1`, `emergency_all 1`, `offline_all 1`, `quicksend_food_all 1`, `quicksend_internet_all 1`, `profile_account_all 1`, `help_trace_all 1`.
+   * **Standalone Unique Screens (57 screens):** Single mobile screens (including Onboarding: `Group 4`, `Group 3`, `first-funding-prompt 1`, Home, Quick Spend, Savings Hub, Budget, Activity, Settings V2).
+   * $\text{Sum} = 8 + 10 + 7 + 57 = \mathbf{82\text{ entities}}$.
 
-> [!NOTE]
-> In addition, the design contains **legacy "version 1" vector outlines** alongside **"version 2" live-text components** for settings/profile frames (e.g. `help-support 1` with 0 text nodes vs `help-support 2` with 23 text nodes). Our implementation strictly targets the **canonical "version 2" frames**.
+3. **Compound Board Sub-States (Visual Inspection & Crop Verification = 22 screens):**
+   Visual inspection of the 3x ground-truth composite strips confirms each compound board contains between 2 and 4 phone-width screens (not 6):
+   * `failure_states_all 1` (w=2552, h=870): **3 screens** (1. Bank maintenance, 2. Provider unavailable, 3. Transaction failed & auto-reversed)
+   * `emergency_all 1` (w=2552, h=870): **3 screens** (1. Emergency fund balance, 2. Release override form, 3. Cooldown & consequence)
+   * `offline_all 1` (w=2552, h=870): **2 screens** (1. Otis offline modal popup, 2. Slim offline status banner)
+   * `quicksend_food_all 1` (w=2552, h=870): **4 screens** (1. Food quick spend amount, 2. Review confirmation, 3. Processing spinner, 4. Release receipt)
+   * `quicksend_internet_all 1` (w=2552, h=870): **4 screens** (1. Data quick spend amount, 2. Review confirmation, 3. Processing spinner, 4. Release receipt)
+   * `profile_account_all 1` (w=2552, h=870): **4 screens** (1. LockBudget account details, 2. Change PIN current, 3. Change PIN new, 4. PIN updated)
+   * `help_trace_all 1` (w=2552, h=870): **2 screens** (1. Report a transaction form, 2. Case CS-2210 opened receipt)
+   * **Total Compound Sub-States:** $3 + 3 + 2 + 4 + 4 + 4 + 2 = \mathbf{22\text{ screens}}$.
+
+4. **Total Canonical Unique Screens:**
+   $$\text{Canonical Screens} = 57\text{ (standalone unique screens)} + 22\text{ (compound sub-states)} = \mathbf{79\text{ unique screens}}.$$
+
+5. **Reconciliation with "~122 Screens" Claim:**
+   The informal "~122 screens" figure in the master build prompt arose from:
+   $$\text{Top-level frames } (80) + \text{assumed } 6\text{ screens per compound strip } (7 \times 6 = 42) = 122.$$
+   Our visual crop verification disproves this: compound boards contain only **22 screens** (not 42).
+   Furthermore, subtracting the 8 obsolete V1 drafts and 10 `--full` scroll variants yields the true canonical target of **79 unique functional screens**.
+   Onboarding accounts for exactly **3 screens** (`Group 4`, `Group 3`, `first-funding-prompt 1`).
 
 ---
+
 
 ## 2. Comprehensive Screen Inventory Table
 
@@ -100,20 +118,24 @@ $$\text{Total Effective Screens/States} = (74 - 7\text{ compounds}) + 3\text{ on
 | **65** | Profile & Settings | `settings 2` | `175c2969-015c...` | 390x844 | General Application Settings | Currency display format (₦ / NGN), App language, Theme (Light mode locked), Privacy Policy, Terms | Taps navigate or toggle | **Partial** | Needs dedicated screen in Batch 5. |
 | **66** | Profile & Settings | `settings--full 1` | `42b7bf15-1c92...` | 390x988 | Full App Settings & Diagnostics | Network diagnostic checker, Cache clearer, Log export | Actions execute utilities | **Partial** | Required in Batch 5. |
 | **67** | Profile & Settings | `delete-account-confirmation 2` | `cbe7cb2f-75c7...` | 390x844 | Destructive Account Deletion Confirmation | Warning icon, Irreversible warning card, Balance withdrawal requirement, Password confirmation, Red "Delete My Account" CTA | "Delete" → triggers lockout & wipes local data | **N** | Required in Phase 3 Batch 5. |
-| **68-73** | Edge Cases & Compound | `failure_states_all 1` (6 sub-states) | `5edc60fb-e054...` | 2552x870 | Compound Canvas: 6 System Failure States | 1. Insufficient Allowance<br>2. Daily Limit Reached<br>3. Bank Network Timeout<br>4. Reversal in Progress<br>5. Invalid PIN Lockout<br>6. Server Maintenance | Action CTA per state ("Top up", "Try again", "Contact support") | **Partial** | Modal simulator exists in `failure_modal.dart`; all 6 variants need dedicated components. |
-| **74-79** | Edge Cases & Compound | `emergency_all 1` (6 sub-states) | `55590f00-cfbb...` | 2552x870 | Compound Canvas: 6 Emergency Unlock States | 1. Emergency Fund Access Prompt<br>2. Penalty Warning Notice<br>3. Reason Confirmation Selector<br>4. 2FA Security Challenge<br>5. Partial Unlock Preview<br>6. Emergency Funds Disbursed Receipt | Step-by-step unlock flow | **N** | Required in Phase 3 Batch 4. |
-| **80-85** | Edge Cases & Compound | `offline_all 1` (6 sub-states) | `321e3bc5-4243...` | 2552x870 | Compound Canvas: 6 Offline Operation States | 1. Global Offline Banner<br>2. Cached Balance Notice<br>3. Offline Spend Queued<br>4. Reconnection Syncing Spinner<br>5. Sync Conflicts Resolution<br>6. Sync Complete Toast | "Retry", "Sync now" | **Partial** | `offline_banner.dart` covers banner; remaining 5 states required. |
-| **86-91** | Edge Cases & Compound | `quicksend_food_all 1` (6 sub-states) | `2790f632-2d21...` | 2552x870 | Compound Canvas: 6 Food Category Specific Flows | 1. Food Quick Send Card<br>2. Fast ₦500 / ₦1,000 / ₦2,000 Presets<br>3. Over-allowance Warning<br>4. Pin Verification<br>5. Merchant Note Prompt<br>6. Food Receipt | Fast-tap shortcuts | **N** | Category shortcuts to implement in Batch 2. |
-| **92-97** | Edge Cases & Compound | `quicksend_internet_all 1` (6 sub-states) | `449a2235-4aa0...` | 2552x870 | Compound Canvas: 6 Internet/Airtime Flows | 1. Data Bundle Selector<br>2. Telco Provider Picker (MTN, Airtel, Glo, 9mobile)<br>3. Phone number book picker<br>4. Direct Recharge Processing<br>5. Token/Data confirmation<br>6. Airtime Receipt | Telco selection & recharge | **N** | Category shortcuts to implement in Batch 2. |
-| **98-103** | Edge Cases & Compound | `help_trace_all 1` (6 sub-states) | `074f2472-12b2...` | 2552x870 | Compound Canvas: 6 Support & Ticket Flows | 1. Ticket Submission Form<br>2. Upload Payment Proof Attachment<br>3. Dispute In-Progress Tracker<br>4. Agent Live Chat Interface<br>5. Dispute Resolved Summary<br>6. Feedback Rating Modal | Send message, Upload file, Rate experience | **N** | Required in Batch 5. |
-| **104-109** | Edge Cases & Compound | `profile_account_all 1` (6 sub-states) | `00c0c6ef-c0f6...` | 2552x870 | Compound Canvas: 6 Account Security States | 1. BVN Verification Flow<br>2. Address Document Upload<br>3. Change Password Form<br>4. Reset Transaction PIN via OTP<br>5. Active Sessions List (devices)<br>6. Session Terminated Notice | OTP verification, Device revoke | **N** | Required in Batch 5. |
-| **110-117** | Obsolete Vector Drafts | `delete-account-confirmation 1`<br>`help-support 1`<br>`notification-settings 1`<br>`personal-bank-account 1`<br>`profile-window 1`<br>`security-settings 1`<br>`settings 1`<br>`user-profile 1` | Various | 390x844 | Obsolete V1 vector draft frames in Figma (0 text elements) | Replaced in design by canonical "V2" frames with live text components | Superceded by corresponding V2 screens | **N** | Canonical design truth resides in V2 frames. |
-| **118-122** | Overlays & Modals | Modal Overlays | In-app modals | Overlay | In-app modal sheets & alert dialogs | Top Up Sheet, Transaction Detail, Profile Window, Failure Alert | Dismiss / Action | **Y** | Fully reusable sheet components. |
+| **68-70** | Edge Cases & Compound | `failure_states_all 1` (3 sub-states) | `5edc60fb-e054...` | 2552x870 | Compound Canvas: 3 System Failure States | 1. Bank Maintenance (FirstBank)<br>2. Provider Unavailable (Moniepoint)<br>3. Transaction Failed & Auto-Reversed (QR-1112) | Action CTAs ("Notify me", "Try again", "Back") | **Partial** | Modal simulator exists in `failure_modal.dart`; all 3 variants need dedicated components. |
+| **71-73** | Edge Cases & Compound | `emergency_all 1` (3 sub-states) | `55590f00-cfbb...` | 2552x870 | Compound Canvas: 3 Emergency Fund States | 1. Emergency Fund Balance & Rules (₦15k)<br>2. Release Override Form (₦5k request, reason input)<br>3. Cooldown & Consequence (48-hour cooldown active) | Step-by-step unlock flow | **N** | Required in Phase 3 Batch 4. |
+| **74-75** | Edge Cases & Compound | `offline_all 1` (2 sub-states) | `321e3bc5-4243...` | 2552x870 | Compound Canvas: 2 Offline Operation States | 1. Otis Offline Modal Popup ("Otis fixes the cable")<br>2. Slim Offline Status Banner at bottom of screen | "Try again", "Retry" | **Partial** | `offline_banner.dart` covers banner; modal popup required. |
+| **76-79** | Edge Cases & Compound | `quicksend_food_all 1` (4 sub-states) | `2790f632-2d21...` | 2552x870 | Compound Canvas: 4 Food Quick Spend States | 1. Food Release Entry (₦800 with ₦200-₦1000 presets, Otis eating)<br>2. Food Review Confirmation Card<br>3. Food Processing Spinner ("Otis is watching it land")<br>4. Food Release Receipt (QR-1104) | Fast-tap shortcuts & flow | **N** | Category shortcuts to implement in Batch 2. |
+| **80-83** | Edge Cases & Compound | `quicksend_internet_all 1` (4 sub-states) | `449a2235-4aa0...` | 2552x870 | Compound Canvas: 4 Internet/Data Quick Spend States | 1. Data Release Entry (₦2,000 with presets, Otis phone)<br>2. Data Review Confirmation Card<br>3. Data Processing Spinner<br>4. Data Release Receipt (QR-1112) | Telco selection & recharge flow | **N** | Category shortcuts to implement in Batch 2. |
+| **84-85** | Edge Cases & Compound | `help_trace_all 1` (2 sub-states) | `074f2472-12b2...` | 2552x870 | Compound Canvas: 2 Support & Ticket States | 1. Report a Transaction Form (Radio reasons & remedies)<br>2. Report Sent Confirmation (Case CS-2210 opened) | Send report, Track case | **N** | Required in Batch 5. |
+| **86-89** | Edge Cases & Compound | `profile_account_all 1` (4 sub-states) | `00c0c6ef-c0f6...` | 2552x870 | Compound Canvas: 4 Account & Security States | 1. LockBudget Account Details (Virtual account top-up)<br>2. Change PIN (Enter current PIN)<br>3. Change PIN (Set & confirm new PIN)<br>4. PIN Updated Confirmation (Security overview) | PIN update & account details | **N** | Required in Batch 5. |
+| **90-97** | Obsolete Vector Drafts | `delete-account-confirmation 1`<br>`help-support 1`<br>`notification-settings 1`<br>`personal-bank-account 1`<br>`profile-window 1`<br>`security-settings 1`<br>`settings 1`<br>`user-profile 1` | Various | 390x844 | Obsolete V1 vector draft frames in Figma (0 text elements) | Replaced in design by canonical "V2" frames with live text components | Superseded by corresponding V2 screens | **N** | Canonical design truth resides in V2 frames. |
 
 ---
 
 ## 3. Summary Reconciliation Metrics
-* **Total Top-Level Canvas Entities:** 82 (80 frames + 2 root groups)
-* **Canonical Implemented / Target Screens:** 74 single screens + 42 compound sub-states + 4 overlay modals = **120 unique screen states**
-* **Existing in Repo Today:** 18 fully implemented, 19 partial implementations, 45 to be built or integrated from compound flows.
-* **Obsolete / Superceded V1 Frames:** 8 (documented for design audit traceability).
+* **Total Top-Level Canvas Entities:** 82 (80 frames + 2 root groups `Group 4` & `Group 3`)
+* **Obsolete V1 Vector Drafts:** 8 frames (superseded by canonical V2 screens)
+* **Extended `--full` Scroll Variants:** 10 frames (handled via scroll views in Flutter, not separate routes)
+* **Compound Strip Boards:** 7 boards (containing 22 verified sub-states)
+* **Standalone Unique Screens:** 57 screens (including 3 onboarding screens: `Group 4`, `Group 3`, `first-funding-prompt 1`)
+* **Canonical Implemented / Target Unique Screens:** 57 standalone + 22 compound sub-states = **79 unique screens**
+* **Total Viewable Screen Designs (including scroll extensions):** 79 canonical + 10 scroll variants = **89 visual screens**
+* **Existing in Repo Today:** Batch 1 (3 onboarding screens) implemented with Source Sans 3 typography and visual verification harness.
+

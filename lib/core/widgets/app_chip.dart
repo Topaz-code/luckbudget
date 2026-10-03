@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_dimens.dart';
+import '../theme/app_typography.dart';
 
 class AppChip extends StatelessWidget {
   final String label;
@@ -50,9 +50,7 @@ class AppChip extends StatelessWidget {
             ],
             Text(
               label,
-              style: GoogleFonts.sourceSans3(
-                fontSize: 13.5,
-                fontWeight: isSelected ? FontWeight.w700 : FontWeight.w600,
+              style: (isSelected ? AppTypography.bodySmallBold : AppTypography.bodySmall).copyWith(
                 color: isSelected ? Colors.white : AppColors.textPrimary,
               ),
             ),

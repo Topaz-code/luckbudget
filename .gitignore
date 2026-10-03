@@ -103,3 +103,6 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Local test renders
+test_renders/

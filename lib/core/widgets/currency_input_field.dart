@@ -73,10 +73,10 @@ class CurrencyInputField extends StatelessWidget {
                     color: AppColors.textPrimary,
                     fontWeight: FontWeight.w700,
                   ),
-                  decoration: const InputDecoration(
+                  decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: '0',
-                    hintStyle: TextStyle(color: AppColors.textMuted),
+                    hintStyle: AppTypography.headlineLarge.copyWith(color: AppColors.textMuted),
                     isDense: true,
                     contentPadding: EdgeInsets.zero,
                   ),

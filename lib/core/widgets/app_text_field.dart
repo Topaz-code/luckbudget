@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_colors.dart';
 import '../theme/app_dimens.dart';
+import '../theme/app_typography.dart';
 
 class AppTextField extends StatelessWidget {
   final TextEditingController? controller;
@@ -39,11 +39,7 @@ class AppTextField extends StatelessWidget {
         if (label != null) ...[
           Text(
             label!,
-            style: GoogleFonts.sourceSans3(
-              fontSize: 14.0,
-              fontWeight: FontWeight.w600,
-              color: AppColors.textPrimary,
-            ),
+            style: AppTypography.bodyMediumBold,
           ),
           const SizedBox(height: AppDimens.space6),
         ],
@@ -54,11 +50,7 @@ class AppTextField extends StatelessWidget {
           readOnly: readOnly,
           onTap: onTap,
           onChanged: onChanged,
-          style: GoogleFonts.sourceSans3(
-            fontSize: 15.0,
-            fontWeight: FontWeight.w500,
-            color: AppColors.textPrimary,
-          ),
+          style: AppTypography.bodyLarge,
           decoration: InputDecoration(
             hintText: hintText,
             errorText: errorText,

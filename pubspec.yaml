@@ -36,7 +36,6 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   # Design system typography, formatting, and offline foundation
-  google_fonts: ^6.2.1
   intl: ^0.19.0
   shared_preferences: ^2.2.3
   flutter_svg: ^2.0.10
@@ -75,11 +74,5 @@ flutter:
       fonts:
         - asset: assets/fonts/SourceSans3-Regular.ttf
           weight: 400
-        - asset: assets/fonts/SourceSans3-Medium.ttf
-          weight: 500
-        - asset: assets/fonts/SourceSans3-SemiBold.ttf
-          weight: 600
         - asset: assets/fonts/SourceSans3-Bold.ttf
           weight: 700
-        - asset: assets/fonts/SourceSans3-ExtraBold.ttf
-          weight: 800
