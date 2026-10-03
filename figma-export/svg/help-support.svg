@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Help and support</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="clip-0">
+      <rect x="22" y="123.875" width="346" height="90.09375" rx="21"/>
+    </clipPath>
+    <filter id="filter-1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <filter id="filter-2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <rect id="bg-back-link" x="22" y="59.94" width="42" height="42" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(33 70.94) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-help" x="112.08" y="78" fill="#0E3039" font-family="Source Sans 3" font-size="27" font-weight="700" letter-spacing="-0.27">Help</text>
+    <text id="text-customer-care-an" x="112.08" y="101" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="400">Customer care and answers</text>
+    <rect id="bg-inline-tag" x="315.08" y="67.94" width="52.91" height="26" rx="9" fill="#E3F2F0" fill-opacity="1"/>
+    <text id="text-online" x="324.08" y="83.94" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="700">Online</text>
+    <rect id="bg-hero-card" x="22" y="123.88" width="346" height="90.09" rx="21" fill="#0E3039" fill-opacity="1" filter="url(#filter-0)"/>
+    <rect id="hero-card-after" x="280" y="79.88" width="124" height="124" rx="50" fill="#37B1A7" fill-opacity="0.2" clip-path="url(#clip-0)"/>
+    <text id="text-if-money-is-dela" x="40" y="154.88" fill="#FFFFFF" fill-opacity="0.75" font-family="Source Sans 3" font-size="13" font-weight="400">If money is delayed, failed, or confusing, start here.</text>
+    <text id="text-we-will-help-you" x="40" y="190.06" fill="#FFFFFF" font-family="Source Sans 3" font-size="24" font-weight="700" letter-spacing="-0.24">We will help you trace it.</text>
+    <text id="text-contact-customer" x="22" y="249.97" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Contact customer care</text>
+    <text id="text-fast" x="345.25" y="249.97" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">Fast</text>
+    <rect id="bg-card" x="22" y="264.97" width="346" height="203.88" rx="19" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-1)"/>
+    <rect id="bg-row" x="23" y="265.97" width="344" height="67.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-border-bottom" x1="23" y1="333.1" x2="367" y2="333.1" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon" x="37" y="284.28" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-2" transform="translate(45 284.28) scale(0.833 0.833)" fill="none"><path d="M5 5h14v10H8l-3 3V5Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M8 9h8M8 12h5" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-chat-with-suppor" x="85" y="295.97" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Chat with support</text>
+    <text id="text-best-for-failed" x="85" y="315.97" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Best for failed withdrawals and reversals</text>
+    <g id="icon-chev" transform="translate(335 290.28) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <rect id="bg-row-2" x="23" y="333.59" width="344" height="67.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-2-border-bottom" x1="23" y1="400.71999999999997" x2="367" y2="400.71999999999997" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon-2" x="37" y="351.91" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-3" transform="translate(45 351.91) scale(0.833 0.833)" fill="none"><path d="M8 4h8a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z" stroke="#48645F" stroke-width="2"></path><path d="M11 17h2" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-call-support" x="85" y="363.59" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Call support</text>
+    <text id="text-available-8am-to" x="85" y="383.59" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Available 8am to 8pm</text>
+    <g id="icon-chev-2" transform="translate(335 357.91) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <rect id="bg-row-3" x="23" y="401.22" width="344" height="66.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <rect id="bg-row-icon-3" x="37" y="419.53" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-4" transform="translate(45 419.53) scale(0.833 0.833)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 19.5h15" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-report-a-transac" x="85" y="431.22" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Report a transaction</text>
+    <text id="text-attach-activity" x="85" y="451.22" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Attach Activity reference automatically</text>
+    <g id="icon-chev-3" transform="translate(335 425.53) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-quick-answers" x="22" y="504.84" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Quick answers</text>
+    <text id="text-faq" x="346.34" y="504.84" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">FAQ</text>
+    <rect id="bg-card-2" x="22" y="519.84" width="346" height="203.88" rx="19" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-2)"/>
+    <rect id="bg-row-4" x="23" y="520.84" width="344" height="67.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-4-border-bottom" x1="23" y1="587.97" x2="367" y2="587.97" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon-4" x="37" y="539.16" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-5" transform="translate(45 539.16) scale(0.833 0.833)" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="#48645F" stroke-width="2"></path><path d="M9.8 9a2.4 2.4 0 0 1 4.5 1.2c0 1.8-2.3 2-2.3 3.5" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path><path d="M12 17h.01" stroke="#48645F" stroke-width="3" stroke-linecap="round"></path></g>
+    <text id="text-my-top-up-has-no" x="85" y="550.84" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">My top-up has not shown</text>
+    <text id="text-what-to-check-wh" x="85" y="570.84" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">What to check while the bank confirms it</text>
+    <g id="icon-chev-4" transform="translate(335 545.16) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <rect id="bg-row-5" x="23" y="588.47" width="344" height="67.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-5-border-bottom" x1="23" y1="655.6" x2="367" y2="655.6" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon-5" x="37" y="606.78" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-6" transform="translate(45 606.78) scale(0.833 0.833)" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="#48645F" stroke-width="2"></path><path d="M9.8 9a2.4 2.4 0 0 1 4.5 1.2c0 1.8-2.3 2-2.3 3.5" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path><path d="M12 17h.01" stroke="#48645F" stroke-width="3" stroke-linecap="round"></path></g>
+    <text id="text-my-withdrawal-fa" x="85" y="618.47" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">My withdrawal failed</text>
+    <text id="text-how-reversals-wo" x="85" y="638.47" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">How reversals work within 24 hours</text>
+    <g id="icon-chev-5" transform="translate(335 612.78) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <rect id="bg-row-6" x="23" y="656.09" width="344" height="66.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <rect id="bg-row-icon-6" x="37" y="674.41" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-7" transform="translate(45 674.41) scale(0.833 0.833)" fill="none"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z" stroke="#48645F" stroke-width="2"></path><path d="M9.8 9a2.4 2.4 0 0 1 4.5 1.2c0 1.8-2.3 2-2.3 3.5" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path><path d="M12 17h.01" stroke="#48645F" stroke-width="3" stroke-linecap="round"></path></g>
+    <text id="text-how-daily-allowa" x="85" y="686.09" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">How Daily Allowance is calculated</text>
+    <text id="text-budget-fixed-co" x="85" y="706.09" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Budget, fixed costs, and category limits</text>
+    <g id="icon-chev-6" transform="translate(335 680.41) scale(0.75 0.75)" fill="none"><path d="m9 6 6 6-6 6" stroke="#48645F" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+</svg>

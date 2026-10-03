@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Quick Spend Processing</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <rect id="bg-back" x="22" y="58" width="38" height="38" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(31 67) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-processing" x="72" y="75" fill="#0E3039" font-family="Source Sans 3" font-size="22" font-weight="700" letter-spacing="-0.22">Processing</text>
+    <text id="text-airtime" x="72" y="94" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Airtime</text>
+    <rect id="bg-transfer-icon" x="162" y="138" width="66" height="66" rx="22" fill="#0E3039" fill-opacity="1" filter="url(#filter-0)"/>
+    <g id="icon-layer-2" transform="translate(179.5 155.5) scale(1.292 1.292)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 20h15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-bank-transfer" x="194.99" y="232" fill="#1F7D76" font-family="Source Sans 3" font-size="13" font-weight="700" text-anchor="middle">Bank transfer</text>
+    <text id="text-releasing-airtim" x="195" y="265" fill="#0E3039" font-family="Source Sans 3" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="-0.36">Releasing Airtime money</text>
+    <g id="icon-layer-3" transform="translate(163.09 293.59) scale(0.13 0.136)" fill="none"><path d="M8 0H24V140H8Z M76 0H92V140H76Z M8 8H24L92 132H76Z M0 50H100V64H0Z M0 74H100V88H0Z" fill="#0E3039"></path></g>
+    <text id="text-300" x="203" y="313.91" fill="#0E3039" font-family="Source Sans 3" font-size="32" font-weight="700" text-anchor="middle" letter-spacing="-0.96">300</text>
+    <rect id="bg-progress" x="22" y="353.59" width="346" height="190" rx="0" fill="none"/>
+    <rect id="bg-step" x="22" y="354.59" width="346" height="63" rx="0" fill="none"/>
+    <line id="bg-step-border-bottom" x1="22" y1="417.09" x2="368" y2="417.09" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-mark" x="22" y="375.09" width="26" height="26" rx="9" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-4" transform="translate(27 375.09) scale(0.667 0.667)" fill="none"><path d="m6 12 4 4 8-9" stroke="#48645F" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-withdrawal-reque" x="63" y="383.59" fill="#0E3039" font-family="Source Sans 3" font-size="13.5" font-weight="700">Withdrawal request made</text>
+    <text id="text-your-pin-confirm" x="63" y="401.09" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="600">Your PIN confirmation was accepted.</text>
+    <text id="text-success" x="368" y="388.59" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="end">Success</text>
+    <rect id="bg-step-2" x="22" y="417.59" width="346" height="63" rx="0" fill="none"/>
+    <line id="bg-step-2-border-bottom" x1="22" y1="480.09" x2="368" y2="480.09" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-mark-2" x="22" y="438.09" width="26" height="26" rx="9" fill="#F2B32A" fill-opacity="0.16"/>
+    <g id="icon-layer-5" transform="translate(27 438.09) scale(0.667 0.667)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#9B6A00" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 20h15" stroke="#9B6A00" stroke-linecap="round"></path></g>
+    <text id="text-waiting-for-bank" x="63" y="446.59" fill="#0E3039" font-family="Source Sans 3" font-size="13.5" font-weight="700">Waiting for bank</text>
+    <text id="text-the-bank-is-conf" x="63" y="464.09" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="600">The bank is confirming the transfer.</text>
+    <text id="text-pending" x="368" y="451.59" fill="#9B6A00" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="end">Pending</text>
+    <rect id="bg-mark-3" x="22" y="501.09" width="26" height="26" rx="9" fill="#F1F4F4" fill-opacity="1"/>
+    <g id="icon-layer-6" transform="translate(27 501.09) scale(0.667 0.667)" fill="none"><path d="M6 5h12v14H6V5Z" stroke="#48645F" stroke-linejoin="round"></path><path d="m9 12 2 2 4-5" stroke="#48645F" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-account-credited" x="63" y="509.59" fill="#0E3039" font-family="Source Sans 3" font-size="13.5" font-weight="700">Account credited</text>
+    <text id="text-receipt-becomes" x="63" y="527.09" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="600">Receipt becomes available after credit.</text>
+    <text id="text-next" x="368" y="514.59" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="end">Next</text>
+    <rect id="bg-button" x="22" y="573.59" width="346" height="48" rx="14" fill="#37B1A7" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="0"/>
+    <text id="text-view-receipt" x="154.56" y="602.09" fill="#FFFFFF" font-family="Source Sans 3" font-size="15" font-weight="700">View receipt</text>
+</svg>

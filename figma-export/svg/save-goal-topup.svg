@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Top up goal</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="grad-0" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="rgba(0, 0, 0, 0)"/>
+        <stop offset="33%" stop-color="rgba(0, 0, 0, 0)"/>
+        <stop offset="67%" stop-color="rgba(14, 48, 57, 0.1)"/>
+        <stop offset="25%" stop-color="rgba(14, 48, 57, 0.1)"/>
+    </linearGradient>
+    <linearGradient id="grad-1" x1="0%" y1="50%" x2="100%" y2="50%">
+        <stop offset="0%" stop-color="rgb(55, 177, 167)"/>
+        <stop offset="100%" stop-color="rgb(31, 125, 118)"/>
+    </linearGradient>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <rect id="bg-back" x="22" y="58" width="38" height="38" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(31 67) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-top-up-goal" x="72" y="75" fill="#0E3039" font-family="Source Sans 3" font-size="22" font-weight="700" letter-spacing="-0.22">Top up goal</text>
+    <text id="text-add-to-my-goal" x="72" y="94" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Add to My goal</text>
+    <rect id="bg-goal-strip" x="22" y="118" width="346" height="126.89" rx="18" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-0)"/>
+    <text id="text-current-goal" x="38" y="143" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="700" letter-spacing="0.825">CURRENT GOAL</text>
+    <text id="text-my-goal" x="38" y="172" fill="#0E3039" font-family="Source Sans 3" font-size="22" font-weight="700" letter-spacing="-0.22">My goal</text>
+    <text id="text-20-000-saved-ou" x="38" y="197" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="400">₦20,000 saved out of ₦200,000</text>
+    <rect id="bg-progress-track" x="38" y="215.89" width="314" height="13" rx="8" fill="url(#grad-0)" stroke="#E1EAE8" stroke-width="1"/>
+    <rect id="bg-progress-fill" x="42" y="219.89" width="62.39" height="5" rx="6" fill="url(#grad-1)"/>
+    <rect id="progress-fill-after" x="104.39" y="217.89" width="3" height="9" rx="3" fill="#F2B32A" fill-opacity="1"/>
+    <text id="text-top-up-amount" x="22" y="282.89" fill="#0E3039" font-family="Source Sans 3" font-size="20" font-weight="700" letter-spacing="-0.2">Top-up amount</text>
+    <rect id="bg-amount-card" x="22" y="298.89" width="346" height="154" rx="18" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-amount-to-add" x="39" y="324.89" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="700" letter-spacing="0.825">AMOUNT TO ADD</text>
+    <rect id="bg-amount-field" x="39" y="338.89" width="312" height="74" rx="16" fill="#F1F4F4" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer-2" transform="translate(54 364.89) scale(0.14 0.143)" fill="none"><path d="M8 0H24V140H8V0ZM76 0H92V140H76V0ZM8 8H24L92 132H76L8 8ZM0 50H100V64H0V50ZM0 74H100V88H0V74Z" fill="#0E3039"></path></g>
+    <text id="text-20000" x="77" y="384.29" fill="#0E3039" font-family="Source Sans 3" font-size="28" font-weight="700">20000</text>
+    <text id="text-available" x="39" y="432.89" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">Available</text>
+    <text id="text-164-250" x="299.05" y="432.89" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">₦164,250</text>
+    <rect id="bg-summary-card" x="22" y="464.89" width="346" height="163" rx="18" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <rect id="bg-summary-row" x="38" y="480.89" width="314" height="27" rx="0" fill="none"/>
+    <line id="bg-summary-row-border-bottom" x1="38" y1="507.39" x2="352" y2="507.39" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-saved-after-top" x="38" y="491.89" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="600">Saved after top-up</text>
+    <text id="text-40-000" x="352" y="491.89" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">₦40,000</text>
+    <rect id="bg-summary-row-2" x="38" y="507.89" width="314" height="39" rx="0" fill="none"/>
+    <line id="bg-summary-row-2-border-bottom" x1="38" y1="546.39" x2="352" y2="546.39" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-remaining-after" x="38" y="530.89" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="600">Remaining after top-up</text>
+    <text id="text-160-000" x="352" y="530.89" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">₦160,000</text>
+    <rect id="bg-summary-row-3" x="38" y="546.89" width="314" height="39" rx="0" fill="none"/>
+    <line id="bg-summary-row-3-border-bottom" x1="38" y1="585.39" x2="352" y2="585.39" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-progress-after-t" x="38" y="569.89" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="600">Progress after top-up</text>
+    <text id="text-20" x="352" y="569.89" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">20%</text>
+    <text id="text-from" x="38" y="608.89" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="600">From</text>
+    <text id="text-lockbudget-balan" x="352" y="608.89" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">LockBudget balance</text>
+    <rect id="bg-button" x="22" y="649.89" width="346" height="50" rx="14" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-review-top-up" x="195.01" y="679.14" fill="#FFFFFF" font-family="Source Sans 3" font-size="15.5" font-weight="700" text-anchor="middle">Review top-up</text>
+    <rect id="bg-button-2" x="22" y="711.89" width="346" height="50" rx="14" fill="none" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-cancel" x="194.99" y="741.14" fill="#0E3039" font-family="Source Sans 3" font-size="15.5" font-weight="700" text-anchor="middle">Cancel</text>
+</svg>

@@ -1,0 +1,768 @@
+[
+  {
+    "file": "activity-detail-electricity.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.1954672499696197,
+    "vpChrome": 2.317110219953822,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-emergency.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2759752096244987,
+    "vpChrome": 2.472657674079475,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-failed.html",
+    "isScrollable": true,
+    "fullHeight": 955,
+    "vpResvg": 1.7754283631060883,
+    "vpChrome": 3.194495078381334,
+    "fullResvg": 1.6055846422338569,
+    "fullChrome": 2.9236139079071015,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (56 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "activity-detail-food.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.094300644063677,
+    "vpChrome": 2.1165998298699717,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-internet.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.1574917973022238,
+    "vpChrome": 2.2320452059788556,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-pending.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2389111678211204,
+    "vpChrome": 2.3207558634098917,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-save.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.0195649532142423,
+    "vpChrome": 2.042471746263215,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-sync-delayed.html",
+    "isScrollable": true,
+    "fullHeight": 919,
+    "vpResvg": 1.4397253615263095,
+    "vpChrome": 2.6509903998055657,
+    "fullResvg": 1.3607321224296196,
+    "fullChrome": 2.523646103624341,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (53 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "activity-detail-topup.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.9539433710049825,
+    "vpChrome": 1.9826224328593995,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail-withdrawal.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.260177421314862,
+    "vpChrome": 2.3353384372341717,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity-detail.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2592660104508446,
+    "vpChrome": 2.4437963300522543,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "activity.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.5913233685745536,
+    "vpChrome": 2.663142544659132,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "budget-recap.html",
+    "isScrollable": true,
+    "fullHeight": 844,
+    "vpResvg": 3.9087373921497144,
+    "vpChrome": 5.515250941791226,
+    "fullResvg": 3.726151415724875,
+    "fullChrome": 5.21114351683072,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (87 elements)",
+      "fixed-footer (9 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "budget.html",
+    "isScrollable": true,
+    "fullHeight": 1446,
+    "vpResvg": 1.4509660955158585,
+    "vpChrome": 2.479645157370276,
+    "fullResvg": 1.3196439337518175,
+    "fullChrome": 2.319218356562755,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (88 elements)",
+      "fixed-footer (14 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "delete-account-confirmation.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 2.3140721837404303,
+    "vpChrome": 3.989852959047272,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "first-funding-prompt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.3810912626078502,
+    "vpChrome": 2.5726090655000604,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "help-support.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.7517316806416332,
+    "vpChrome": 3.399866326406611,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "home-dashboard.html",
+    "isScrollable": true,
+    "fullHeight": 1013,
+    "vpResvg": 1.2577469923441487,
+    "vpChrome": 2.657370275853688,
+    "fullResvg": 1.3025539777760904,
+    "fullChrome": 2.602829878249424,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (54 elements)",
+      "fixed-footer (9 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "notification-settings.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.4132944464698018,
+    "vpChrome": 2.9298821241949202,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "personal-bank-account.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.7450480009721718,
+    "vpChrome": 3.023453639567384,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "profile-window.html",
+    "isScrollable": true,
+    "fullHeight": 966,
+    "vpResvg": 1.8945193826710414,
+    "vpChrome": 2.9444646980192006,
+    "fullResvg": 1.8391994478951001,
+    "fullChrome": 2.823167170993258,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (57 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "quick-spend-amount.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.7762182525215701,
+    "vpChrome": 1.4166362863045328,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "quick-spend-processing.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.938449386316685,
+    "vpChrome": 2.0078381334305506,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "quick-spend-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.6929760602746385,
+    "vpChrome": 1.4801312431644185,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "quick-spend-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.0493377081054807,
+    "vpChrome": 1.6390205371248028,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-detail.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.8886255924170616,
+    "vpChrome": 1.9631790010936931,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.3042289464090413,
+    "vpChrome": 2.202880058330295,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2358731316077287,
+    "vpChrome": 2.2539190667152753,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-setup.html",
+    "isScrollable": true,
+    "fullHeight": 990,
+    "vpResvg": 1.287215943614048,
+    "vpChrome": 2.371794871794872,
+    "fullResvg": 1.2118622118622118,
+    "fullChrome": 2.2196322196322193,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (40 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "save-goal-success.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.7719650018228217,
+    "vpChrome": 1.3962814436748086,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-topup-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2823550856726211,
+    "vpChrome": 2.154879086158707,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-topup-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2516709199173655,
+    "vpChrome": 2.281868999878479,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-topup-success.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.759812856969255,
+    "vpChrome": 1.3631668489488395,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-goal-topup.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.9050309879693765,
+    "vpChrome": 1.9914327378782355,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-home.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.6697047028800582,
+    "vpChrome": 2.6230404666423626,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-period-detail.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.9366265645886499,
+    "vpChrome": 1.8884433102442582,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-period-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.2513671162960263,
+    "vpChrome": 2.1393851014704093,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-period-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.1334913112164298,
+    "vpChrome": 2.041560335399198,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-period-setup.html",
+    "isScrollable": true,
+    "fullHeight": 940,
+    "vpResvg": 1.4324340746141693,
+    "vpChrome": 2.565925385830599,
+    "fullResvg": 1.3330605564648117,
+    "fullChrome": 2.400163666121113,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (39 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "save-period-success.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.6185441730465426,
+    "vpChrome": 1.146858670555353,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-receipts.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.5653785393121886,
+    "vpChrome": 1.0538947624255681,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-year-detail.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.8986511119212541,
+    "vpChrome": 1.7851500789889416,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-year-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.243772025762547,
+    "vpChrome": 2.241766921861709,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-year-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.0617936565803863,
+    "vpChrome": 1.897557418884433,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-year-setup.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.4968404423380728,
+    "vpChrome": 2.73332118118848,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "save-year-success.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.6467979098310852,
+    "vpChrome": 1.1444282415846396,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "security-settings.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.7544659132336857,
+    "vpChrome": 3.193583667517317,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "settings.html",
+    "isScrollable": true,
+    "fullHeight": 988,
+    "vpResvg": 2.25574188844331,
+    "vpChrome": 3.824279985417426,
+    "fullResvg": 2.163915706425828,
+    "fullChrome": 3.6720128724177306,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (75 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "top-up-account-details.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.0466034755134281,
+    "vpChrome": 1.6056021387774941,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "user-profile.html",
+    "isScrollable": true,
+    "fullHeight": 1025,
+    "vpResvg": 2.2712358731316074,
+    "vpChrome": 3.107303439056994,
+    "fullResvg": 2.1388367729831144,
+    "fullChrome": 2.9976235146966856,
+    "layerTree": [
+      "fixed-header (7 elements)",
+      "scroll-content (59 elements)",
+      "fixed-footer (0 elements)"
+    ],
+    "hasFullSvg": true
+  },
+  {
+    "file": "withdrawal-amount.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.9448292623648075,
+    "vpChrome": 1.362255438084822,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "withdrawal-processing.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.9818933041681857,
+    "vpChrome": 2.083789038765342,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "withdrawal-receipt.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 0.8166241341596792,
+    "vpChrome": 1.708895370032811,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  },
+  {
+    "file": "withdrawal-review.html",
+    "isScrollable": false,
+    "fullHeight": 844,
+    "vpResvg": 1.146858670555353,
+    "vpChrome": 1.8738607364199782,
+    "fullResvg": null,
+    "fullChrome": null,
+    "layerTree": [
+      "screen-bg",
+      "all-content"
+    ],
+    "hasFullSvg": false
+  }
+]

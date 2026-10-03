@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="1013" viewBox="0 0 390 1013">
+  <title>LockBudget Home (Full Content)</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="clip-0">
+      <rect x="22" y="116" width="346" height="192.03125" rx="18"/>
+    </clipPath>
+    <clipPath id="clip-1">
+      <rect x="22" y="116" width="346" height="192.03125" rx="18"/>
+    </clipPath>
+    <filter id="filter-1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0E3039" flood-opacity="0.035"/>
+    </filter>
+    <filter id="filter-2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0E3039" flood-opacity="0.035"/>
+    </filter>
+    <filter id="filter-3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0E3039" flood-opacity="0.035"/>
+    </filter>
+    <filter id="filter-4" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0E3039" flood-opacity="0.035"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="1013" fill="#FBFDFD"/>
+  <g id="fixed-header">
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+  </g>
+  <g id="scroll-content">
+    <g id="img-avatar" transform="translate(22 56) scale(0.263 0.263)"><rect width="160" height="160" rx="48" fill="#E9FFF6"/>
+  <circle cx="80" cy="74" r="42" fill="#4B2E1F"/>
+  <path d="M38 132c8-26 25-39 42-39s34 13 42 39" fill="#00A870"/>
+  <circle cx="80" cy="76" r="32" fill="#8A5A3B"/>
+  <path d="M52 72c2-22 16-35 31-35 17 0 29 14 31 36-14-6-45-7-62-1Z" fill="#26170F"/>
+  <circle cx="68" cy="78" r="4" fill="#1E120B"/>
+  <circle cx="94" cy="78" r="4" fill="#1E120B"/>
+  <path d="M72 94c6 5 13 5 19 0" stroke="#2B1A12" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="52" cy="84" r="6" fill="#8A5A3B"/>
+  <circle cx="108" cy="84" r="6" fill="#8A5A3B"/>
+  <path d="M53 50c13-24 46-28 66-2-13-5-44-8-66 2Z" fill="#130C08"/></g>
+    <text id="text-hi-yakubu-manag" x="74" y="72.66" fill="#0E3039" font-family="Source Sans 3" font-size="17" font-weight="700" letter-spacing="-0.17">Hi, Yakubu manage</text>
+    <text id="text-spend-from-the-p" x="74" y="91.33" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Spend from the plan</text>
+    <g id="icon-layer" transform="translate(307 66) scale(0.917 0.917)" fill="none"><path d="M18 10c0-3.6-2.3-6-6-6s-6 2.4-6 6v3.2L4.6 16c-.3.6.1 1.2.8 1.2h13.2c.7 0 1.1-.6.8-1.2L18 13.2V10Z" stroke="#0E3039" stroke-width="2" stroke-linejoin="round"></path><path d="M9.5 19.2c.6.7 1.4 1 2.5 1s1.9-.3 2.5-1" stroke="#0E3039" stroke-width="2" stroke-linecap="round"></path></g>
+    <g id="icon-layer-2" transform="translate(345 66) scale(0.917 0.917)" fill="none"><path d="M4 13v-1a8 8 0 0 1 16 0v1" stroke="#0E3039" stroke-width="2" stroke-linecap="round"></path><path d="M6.5 12.5H6A3 3 0 0 0 3 15.5 3 3 0 0 0 6 18.5h.5v-6ZM17.5 12.5h.5a3 3 0 0 1 3 3 3 3 0 0 1-3 3h-.5v-6Z" fill="#0E3039"></path></g>
+    <rect id="bg-allowance-card" x="22" y="116" width="346" height="192.03" rx="18" fill="#0E3039" fill-opacity="1" filter="url(#filter-0)"/>
+    <rect id="allowance-card-before" x="264" y="60" width="150" height="150" rx="50" fill="#37B1A7" fill-opacity="0.2" clip-path="url(#clip-0)"/>
+    <rect id="allowance-card-after" x="298" y="223.03" width="48" height="66" rx="0" fill="#FFFFFF" fill-opacity="1" opacity="0.08" clip-path="url(#clip-1)"/>
+    <text id="text-today-s-allowanc" x="40" y="144" fill="#FFFFFF" fill-opacity="0.72" font-family="Source Sans 3" font-size="11" font-weight="700" letter-spacing="0.825">TODAY'S ALLOWANCE</text>
+    <g id="icon-layer-3" transform="translate(40 165.06) scale(0.15 0.15)" fill="none"><path d="M8 0H24V140H8V0ZM76 0H92V140H76V0ZM8 8H24L92 132H76L8 8ZM0 50H100V64H0V50ZM0 74H100V88H0V74Z" fill="#FFFFFF"></path></g>
+    <text id="text-7-500" x="63" y="188" fill="#FFFFFF" font-family="Source Sans 3" font-size="37" font-weight="700" letter-spacing="-0.74">7,500</text>
+    <text id="text-this-is-what-you" x="40" y="219.14" fill="#FFFFFF" fill-opacity="0.78" font-family="Source Sans 3" font-size="14" font-weight="400">This is what you can spend freely today.</text>
+    <rect id="bg-button" x="40" y="243.03" width="150" height="46" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+    <text id="text-spend" x="94.05" y="270.53" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Spend</text>
+    <rect id="bg-button-2" x="200" y="243.03" width="150" height="46" rx="14" fill="#FFFFFF" fill-opacity="0.12" stroke="#FFFFFF" stroke-width="1" stroke-opacity="0.16"/>
+    <text id="text-top-up" x="252.88" y="270.53" fill="#FFFFFF" font-family="Source Sans 3" font-size="15" font-weight="700">Top up</text>
+    <rect id="bg-balance-row" x="22" y="320.03" width="346" height="67" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-total-in-lockbud" x="37" y="345.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">Total in LockBudget</text>
+    <text id="text-184-250" x="37" y="368.03" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700">₦184,250</text>
+    <text id="text-day" x="257.92" y="357.03" fill="#1F7D76" font-family="Source Sans 3" font-size="13" font-weight="600" text-anchor="middle">Day</text>
+    <text id="text-week" x="292.75" y="357.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600" text-anchor="middle">Week</text>
+    <text id="text-month" x="334.97" y="357.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600" text-anchor="middle">Month</text>
+    <text id="text-quick-spend" x="22" y="425.03" fill="#0E3039" font-family="Source Sans 3" font-size="20" font-weight="700" letter-spacing="-0.2">Quick spend</text>
+    <text id="text-from-budget-line" x="267.63" y="425.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">From budget lines</text>
+    <rect id="bg-quick-card" x="22" y="441.03" width="168" height="102" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-1)"/>
+    <g id="icon-layer-4" transform="translate(36 462.03) scale(0.917 0.917)" fill="none"><path d="M7 3v8M4.5 3v8M9.5 3v8M4.5 11h5M7 11v10" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path><path d="M16.5 3c1.8 1.2 2.8 3.1 2.8 5.2v3h-2.8V21" stroke="#48645F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-food" x="36" y="506.03" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Food</text>
+    <text id="text-12-000-left" x="36" y="526.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">₦12,000 left</text>
+    <rect id="bg-quick-card-2" x="200" y="441.03" width="168" height="102" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-2)"/>
+    <g id="icon-layer-5" transform="translate(214 462.03) scale(0.917 0.917)" fill="none"><path d="m13 2-8 11h6l-1 9 9-12h-6l1-8Z" fill="#48645F"></path></g>
+    <text id="text-airtime" x="214" y="506.03" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Airtime</text>
+    <text id="text-2-000-left" x="214" y="526.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">₦2,000 left</text>
+    <rect id="bg-quick-card-3" x="22" y="553.03" width="168" height="102" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-3)"/>
+    <g id="icon-layer-6" transform="translate(36 574.03) scale(0.917 0.917)" fill="none"><path d="M12 3a6 6 0 0 0-3 11.2V17h6v-2.8A6 6 0 0 0 12 3Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M9.5 20h5M10 17h4" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-electricity" x="36" y="618.03" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Electricity</text>
+    <text id="text-8-500-left" x="36" y="638.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">₦8,500 left</text>
+    <rect id="bg-quick-card-4" x="200" y="553.03" width="168" height="102" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-4)"/>
+    <g id="icon-layer-7" transform="translate(214 574.03) scale(0.917 0.917)" fill="none"><path d="M3 9.5c5.6-4.7 12.4-4.7 18 0M6.5 13c3.5-2.9 7.5-2.9 11 0M10 16.4c1.3-.9 2.7-.9 4 0" stroke="#48645F" stroke-width="2.2" stroke-linecap="round"></path><circle cx="12" cy="20" r="1.5" fill="#48645F"></circle></g>
+    <text id="text-internet" x="214" y="618.03" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Internet</text>
+    <text id="text-4-000-left" x="214" y="638.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">₦4,000 left</text>
+    <text id="text-recent-activity" x="22" y="693.03" fill="#0E3039" font-family="Source Sans 3" font-size="20" font-weight="700" letter-spacing="-0.2">Recent activity</text>
+    <text id="text-view-all" x="324.95" y="693.03" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">View all</text>
+    <rect id="bg-activity-item" x="22" y="709.03" width="346" height="58.44" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-budget-top-up" x="36" y="733.03" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Budget top-up</text>
+    <text id="text-today-9-30-am" x="36" y="750.72" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Today, 9:30 AM</text>
+    <text id="text-25-000" x="298.05" y="742.25" fill="#1F7D76" font-family="Source Sans 3" font-size="14" font-weight="700">+₦25,000</text>
+    <rect id="bg-activity-item-2" x="22" y="775.47" width="346" height="58.44" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-airtime-release" x="36" y="799.47" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Airtime release</text>
+    <text id="text-from-airtime-bud" x="36" y="817.16" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">From Airtime budget</text>
+    <text id="text-300" x="317.03" y="808.69" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700">−₦300</text>
+    <rect id="bg-activity-item-3" x="22" y="841.91" width="346" height="58.44" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-food-release" x="36" y="865.91" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Food release</text>
+    <text id="text-yesterday-7-12" x="36" y="883.59" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Yesterday, 7:12 PM</text>
+    <text id="text-2-000" x="305.44" y="875.13" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700">−₦2,000</text>
+  </g>
+  <g id="fixed-footer">
+    <rect id="bg-nav" x="0" y="921" width="390" height="92" rx="0" fill="#FBFDFD" fill-opacity="0.96"/>
+    <line id="bg-nav-border-top" x1="0" y1="921.5" x2="390" y2="921.5" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-home" x="49.39" y="980.38" fill="#37B1A7" font-family="Source Sans 3" font-size="11.5" font-weight="600">Home</text>
+    <g id="icon-layer-8" transform="translate(53.13 939.13) scale(0.917 0.917)" fill="none"><path d="M3.5 11.2 12 4l8.5 7.2V20a1 1 0 0 1-1 1h-5v-6h-5v6h-5a1 1 0 0 1-1-1v-8.8Z" fill="#37B1A7"></path></g>
+    <text id="text-save" x="139.55" y="980.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Save</text>
+    <g id="icon-layer-9" transform="translate(140.38 939.13) scale(0.917 0.917)" fill="none"><path d="M12 3.5c3.1 3 6.5 6.1 6.5 10.2A6.5 6.5 0 1 1 5.5 13.7C5.5 9.6 8.9 6.5 12 3.5Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M9.2 14.2c1.8 1.5 3.8 1.5 5.6 0" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-budget" x="220.91" y="980.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Budget</text>
+    <g id="icon-layer-10" transform="translate(227.63 939.13) scale(0.917 0.917)" fill="none"><path d="M6 4h9l3 3v13H6V4Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M9 11h6M9 15h6M15 4v4h4" stroke="#48645F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-activity" x="307.2" y="980.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Activity</text>
+    <g id="icon-layer-11" transform="translate(314.88 939.13) scale(0.917 0.917)" fill="none"><path d="M5 6h14M5 12h14M5 18h14" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path><circle cx="8" cy="6" r="1.8" fill="#48645F"></circle><circle cx="16" cy="12" r="1.8" fill="#48645F"></circle><circle cx="11" cy="18" r="1.8" fill="#48645F"></circle></g>
+  </g>
+</svg>

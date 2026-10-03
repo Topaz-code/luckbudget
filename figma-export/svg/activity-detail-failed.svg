@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Withdrawal failed</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <filter id="filter-1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#FFFFFF" flood-opacity="1"/>
+    </filter>
+    <filter id="filter-2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#FFFFFF" flood-opacity="1"/>
+    </filter>
+    <filter id="filter-3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#FFFFFF" flood-opacity="1"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+  <g id="scroll-content">
+    <rect id="bg-back" x="22" y="58" width="38" height="38" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(31 67) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-withdrawal-faile" x="72" y="75.5" fill="#0E3039" font-family="Source Sans 3" font-size="23" font-weight="700" letter-spacing="-0.345">Withdrawal failed</text>
+    <text id="text-bank-response" x="72" y="94.5" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">Bank response</text>
+    <rect id="bg-ticket" x="22" y="116" width="346" height="194.8" rx="22" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-0)"/>
+    <rect id="bg-main-icon" x="168" y="139" width="54" height="54" rx="18" fill="#F8ECEC" fill-opacity="1"/>
+    <g id="icon-layer-2" transform="translate(180 151) scale(1.25 1.25)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#9B3D3D" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 20h15" stroke="#9B3D3D" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-bank-declined" x="194.99" y="216" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="0.88">BANK DECLINED</text>
+    <g id="icon-layer-3" transform="translate(141.75 236.39) scale(0.14 0.143)" fill="none"><path d="M8 0H24V140H8Z M76 0H92V140H76Z M8 8H24L92 132H76Z M0 50H100V64H0Z M0 74H100V88H0Z" fill="#0E3039"></path></g>
+    <text id="text-4-000" x="203.49" y="259" fill="#0E3039" font-family="Source Sans 3" font-size="40" font-weight="700" text-anchor="middle" letter-spacing="-1.4">4,000</text>
+    <text id="text-reversal-request" x="195.01" y="286.8" fill="#9B3D3D" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="middle">Reversal requested</text>
+    <text id="text-progress" x="22" y="346.8" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Progress</text>
+    <rect id="bg-timeline-card" x="22" y="362.8" width="346" height="100.94" rx="20" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <rect id="rail-before" x="89.8" y="392.8" width="210.41" height="2" rx="0" fill="#E1EAE8" fill-opacity="1"/>
+    <rect id="bg-badge" x="73.66" y="379.8" width="28" height="28" rx="10" fill="#37B1A7" fill-opacity="1" filter="url(#filter-1)"/>
+    <g id="icon-layer-4" transform="translate(80.16 386.3) scale(0.625 0.625)" fill="none"><path d="m6 12 4 4 8-9" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-request-sent" x="87.66" y="425.8" fill="#0E3039" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="middle">Request sent</text>
+    <text id="text-10-15" x="87.66" y="446.23" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="middle">10:15</text>
+    <rect id="bg-badge-2" x="180.98" y="379.8" width="28" height="28" rx="10" fill="#9B3D3D" fill-opacity="1" filter="url(#filter-2)"/>
+    <g id="icon-layer-5" transform="translate(187.48 386.3) scale(0.625 0.625)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#FFFFFF" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 20h15" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-bank-declined-2" x="194.98" y="425.8" fill="#0E3039" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="middle">Bank declined</text>
+    <text id="text-failed" x="194.99" y="446.23" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="middle">Failed</text>
+    <rect id="bg-badge-3" x="288.33" y="379.8" width="28" height="28" rx="10" fill="#F2B32A" fill-opacity="1" filter="url(#filter-3)"/>
+    <g id="icon-layer-6" transform="translate(294.83 386.3) scale(0.625 0.625)" fill="none"><path d="M12 7v5l3 2" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" stroke="#FFFFFF" stroke-width="2.1"></path></g>
+    <text id="text-reversal-sent" x="302.32" y="425.8" fill="#0E3039" font-family="Source Sans 3" font-size="12" font-weight="700" text-anchor="middle">Reversal sent</text>
+    <text id="text-sent" x="302.33" y="446.23" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="middle">Sent</text>
+    <rect id="bg-reversal-note" x="22" y="477.73" width="346" height="80.64" rx="18" fill="#E3F2F0" fill-opacity="1" stroke="#37B1A7" stroke-width="1" stroke-opacity="0.22"/>
+    <text id="text-if-it-is-not-co" x="180.3" y="521.28" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">If it is not, contact</text>
+    <text id="text-support-using-th" x="37" y="538.83" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">support using the customer care icon.</text>
+    <text id="text-your-money-shoul" x="37" y="503.73" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">Your money should be reversed to your</text>
+    <text id="text-account-within-2" x="37" y="521.28" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">account within 24 hours.</text>
+    <rect id="bg-care-icon" x="317" y="500.05" width="36" height="36" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#37B1A7" stroke-width="1" stroke-opacity="0.25"/>
+    <g id="icon-layer-7" transform="translate(326 509.05) scale(0.75 0.75)" fill="none"><path d="M4 13v-1a8 8 0 0 1 16 0v1" stroke="#1F7D76" stroke-width="2" stroke-linecap="round"></path><path d="M6.5 12.5H6A3 3 0 0 0 3 15.5 3 3 0 0 0 6 18.5h.5v-6ZM17.5 12.5h.5a3 3 0 0 1 3 3 3 3 0 0 1-3 3h-.5v-6Z" fill="#1F7D76"></path></g>
+    <text id="text-details" x="22" y="594.38" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Details</text>
+    <rect id="bg-details" x="22" y="610.38" width="346" height="250.03" rx="18" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <rect id="bg-row" x="38" y="615.38" width="314" height="40.17" rx="0" fill="none"/>
+    <line id="bg-row-border-bottom" x1="38" y1="655.05" x2="352" y2="655.05" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-type" x="38" y="638.7" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">Type</text>
+    <text id="text-withdrawal" x="352" y="639.38" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">Withdrawal</text>
+    <rect id="bg-row-2" x="38" y="655.55" width="314" height="40.17" rx="0" fill="none"/>
+    <line id="bg-row-2-border-bottom" x1="38" y1="695.2199999999999" x2="352" y2="695.2199999999999" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-from" x="38" y="678.88" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">From</text>
+    <text id="text-daily-allowance" x="352" y="679.55" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">Daily Allowance</text>
+    <rect id="bg-row-3" x="38" y="695.72" width="314" height="40.17" rx="0" fill="none"/>
+    <line id="bg-row-3-border-bottom" x1="38" y1="735.39" x2="352" y2="735.39" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-to" x="38" y="719.05" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">To</text>
+    <text id="text-personal-bank-ac" x="352" y="719.72" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">Personal bank account</text>
+    <rect id="bg-row-4" x="38" y="735.89" width="314" height="40.17" rx="0" fill="none"/>
+    <line id="bg-row-4-border-bottom" x1="38" y1="775.56" x2="352" y2="775.56" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-bank-response-2" x="38" y="759.22" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">Bank response</text>
+    <text id="text-refused-to-disbu" x="352" y="759.89" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">Refused to disburse</text>
+    <rect id="bg-row-5" x="38" y="776.06" width="314" height="40.17" rx="0" fill="none"/>
+    <line id="bg-row-5-border-bottom" x1="38" y1="815.7299999999999" x2="352" y2="815.7299999999999" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-reversal" x="38" y="799.39" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">Reversal</text>
+    <text id="text-request-sent-2" x="352" y="800.06" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">Request sent</text>
+    <text id="text-reference" x="38" y="839.56" fill="#48645F" font-family="Source Sans 3" font-size="13.2" font-weight="600">Reference</text>
+    <text id="text-fl-8842" x="352" y="840.23" fill="#0E3039" font-family="Source Sans 3" font-size="13.2" font-weight="700" text-anchor="end">FL-8842</text>
+    <rect id="bg-button" x="22" y="880.41" width="168" height="50" rx="15" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-back" x="89.88" y="909.91" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Back</text>
+    <rect id="bg-button-2" x="200" y="880.41" width="168" height="50" rx="15" fill="#37B1A7" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="0"/>
+    <text id="text-support" x="256.95" y="909.91" fill="#FFFFFF" font-family="Source Sans 3" font-size="15" font-weight="700">Support</text>
+  </g>
+  <g id="fixed-header">
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+  </g>
+</svg>
