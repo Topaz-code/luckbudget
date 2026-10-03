@@ -73,5 +73,13 @@ flutter:
   fonts:
     - family: SourceSans3
       fonts:
-        - asset: assets/fonts/SourceSans3-VariableFont_wght.ttf
-  # see https://flutter.dev/to/font-from-package
+        - asset: assets/fonts/SourceSans3-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/SourceSans3-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/SourceSans3-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/SourceSans3-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/SourceSans3-ExtraBold.ttf
+          weight: 800

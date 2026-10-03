@@ -174,25 +174,18 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                     );
                                   },
                                   child: Container(
-                                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 5),
                                     decoration: BoxDecoration(
-                                      color: Colors.white,
+                                      color: const Color(0xFFF1F5F5),
                                       borderRadius: BorderRadius.circular(AppDimens.radiusFull),
                                     ),
-                                    child: Row(
-                                      mainAxisSize: MainAxisSize.min,
-                                      children: [
-                                        const Icon(Icons.copy, size: 13, color: AppColors.primaryTeal),
-                                        const SizedBox(width: 4),
-                                        Text(
-                                          'Copy',
-                                          style: GoogleFonts.sourceSans3(
-                                            fontSize: 12.0,
-                                            fontWeight: FontWeight.w700,
-                                            color: AppColors.primaryTeal,
-                                          ),
-                                        ),
-                                      ],
+                                    child: Text(
+                                      'Copy',
+                                      style: GoogleFonts.sourceSans3(
+                                        fontSize: 13.0,
+                                        fontWeight: FontWeight.w700,
+                                        color: AppColors.primaryTeal,
+                                      ),
                                     ),
                                   ),
                                 ),
@@ -255,7 +248,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                                       ),
                                       const SizedBox(height: AppDimens.space2),
                                       Text(
-                                        'Wema Bank',
+                                        'Partner bank',
                                         style: GoogleFonts.sourceSans3(
                                           fontSize: 14.0,
                                           fontWeight: FontWeight.w700,
@@ -273,9 +266,9 @@ class FirstFundingPromptScreen extends StatelessWidget {
 
                       const SizedBox(height: AppDimens.space28),
 
-                      // "What happens next?" step guide
+                      // "What happens next" step guide
                       Text(
-                        'What happens next?',
+                        'What happens next',
                         style: GoogleFonts.sourceSans3(
                           fontSize: 16.0,
                           fontWeight: FontWeight.w700,
@@ -291,7 +284,7 @@ class FirstFundingPromptScreen extends StatelessWidget {
                       const SizedBox(height: AppDimens.space12),
                       _buildNextStep(
                         step: '2',
-                        description: 'Come back here; spend tracking begins automatically.',
+                        description: 'Come back here so we can check for confirmation.',
                       ),
 
                       const SizedBox(height: AppDimens.space24),

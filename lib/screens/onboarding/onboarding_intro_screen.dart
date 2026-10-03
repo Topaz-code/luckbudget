@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_dimens.dart';
 import '../../core/widgets/app_button.dart';
@@ -77,7 +76,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                       const SizedBox(width: AppDimens.space8),
                       Text(
                         'Lockbudget',
-                        style: GoogleFonts.sourceSans3(
+                        style: TextStyle(fontFamily: 'SourceSans3', 
                           fontSize: 18.0,
                           fontWeight: FontWeight.w800,
                           color: AppColors.primaryTeal,
@@ -90,7 +89,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     onPressed: widget.onLoginTap ?? _handleContinue,
                     child: Text(
                       'Login',
-                      style: GoogleFonts.sourceSans3(
+                      style: TextStyle(fontFamily: 'SourceSans3', 
                         fontSize: 15.0,
                         fontWeight: FontWeight.w700,
                         color: AppColors.primaryTeal,
@@ -105,7 +104,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
               // Title & Subtitle
               Text(
                 'Let’s get to know you!',
-                style: GoogleFonts.sourceSans3(
+                style: TextStyle(fontFamily: 'SourceSans3', 
                   fontSize: 27.0,
                   fontWeight: FontWeight.w800,
                   color: AppColors.primaryTeal,
@@ -115,7 +114,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
               const SizedBox(height: AppDimens.space6),
               Text(
                 'Introduce yourself.',
-                style: GoogleFonts.sourceSans3(
+                style: TextStyle(fontFamily: 'SourceSans3', 
                   fontSize: 15.5,
                   fontWeight: FontWeight.w500,
                   color: AppColors.textSecondary,
@@ -162,7 +161,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                     padding: const EdgeInsets.symmetric(horizontal: AppDimens.space12),
                     child: Text(
                       'or',
-                      style: GoogleFonts.sourceSans3(
+                      style: TextStyle(fontFamily: 'SourceSans3', 
                         fontSize: 13.0,
                         fontWeight: FontWeight.w500,
                         color: AppColors.textMuted,
@@ -210,7 +209,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                       const SizedBox(width: AppDimens.space10),
                       Text(
                         'Continue with Google',
-                        style: GoogleFonts.sourceSans3(
+                        style: TextStyle(fontFamily: 'SourceSans3', 
                           fontSize: 15.0,
                           fontWeight: FontWeight.w700,
                           color: AppColors.textPrimary,
@@ -228,7 +227,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
                 child: Text(
                   'We’ll never share or sell your data. · Bank-level security.',
                   textAlign: TextAlign.center,
-                  style: GoogleFonts.sourceSans3(
+                  style: TextStyle(fontFamily: 'SourceSans3', 
                     fontSize: 12.0,
                     fontWeight: FontWeight.w500,
                     color: AppColors.textMuted,
@@ -262,16 +261,15 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
         vertical: AppDimens.space10,
       ),
       decoration: BoxDecoration(
-        color: AppColors.background,
+        color: const Color(0xFFF1F5F5),
         borderRadius: BorderRadius.circular(AppDimens.radiusButton),
-        border: Border.all(color: AppColors.borderLight, width: 1.0),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             label,
-            style: GoogleFonts.sourceSans3(
+            style: TextStyle(fontFamily: 'SourceSans3', 
               fontSize: 12.0,
               fontWeight: FontWeight.w600,
               color: AppColors.textSecondary,
@@ -281,7 +279,7 @@ class _OnboardingIntroScreenState extends State<OnboardingIntroScreen> {
           TextField(
             controller: controller,
             keyboardType: keyboardType,
-            style: GoogleFonts.sourceSans3(
+            style: TextStyle(fontFamily: 'SourceSans3', 
               fontSize: 15.0,
               fontWeight: FontWeight.w600,
               color: AppColors.textPrimary,

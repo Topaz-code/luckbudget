@@ -23,20 +23,19 @@ class OnboardingBudgetSetupScreen extends StatefulWidget {
 
 class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScreen> {
   final _currencyFormat = NumberFormat('#,##0', 'en_US');
-  double _monthlyIncome = 50000;
-  final List<double> _incomeChips = [50000, 150000, 300000];
+  final double _monthlyIncome = 50000;
 
   final List<Map<String, dynamic>> _fixedExpenses = [
-    {'title': 'Food', 'amount': 32000.0, 'icon': Icons.restaurant_outlined},
-    {'title': 'Internet', 'amount': 2000.0, 'icon': Icons.wifi_outlined},
-    {'title': 'Transportation', 'amount': 4000.0, 'icon': Icons.directions_bus_outlined},
-    {'title': 'Netflix', 'amount': 0.0, 'icon': Icons.movie_outlined},
-    {'title': 'Debt', 'amount': 5000.0, 'icon': Icons.credit_card_outlined},
+    {'title': 'Food', 'amount': 32000.0},
+    {'title': 'Internet', 'amount': 2000.0},
+    {'title': 'Transportation', 'amount': 4000.0},
+    {'title': 'Netflix', 'amount': 0.0},
+    {'title': 'Debt', 'amount': 5000.0},
   ];
 
   final List<Map<String, dynamic>> _variableExpenses = [
-    {'title': 'Miscellaneous', 'amount': 0.0, 'icon': Icons.category_outlined},
-    {'title': 'Gift', 'amount': 0.0, 'icon': Icons.card_giftcard_outlined},
+    {'title': 'Miscellaneous', 'amount': 0.0},
+    {'title': 'Gift', 'amount': 0.0},
   ];
 
   double get _totalFixed => _fixedExpenses.fold(0.0, (sum, item) => sum + (item['amount'] as double));
@@ -132,42 +131,6 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
                           color: AppColors.primaryTeal,
                         ),
                       ),
-                    ),
-
-                    const SizedBox(height: AppDimens.space12),
-
-                    // Income Quick Preset Chips (₦50,000, ₦150,000, ₦300,000)
-                    Row(
-                      children: _incomeChips.map((val) {
-                        final isSel = _monthlyIncome == val;
-                        return Expanded(
-                          child: GestureDetector(
-                            onTap: () => setState(() => _monthlyIncome = val),
-                            child: Container(
-                              margin: const EdgeInsets.symmetric(horizontal: AppDimens.space4),
-                              padding: const EdgeInsets.symmetric(vertical: AppDimens.space10),
-                              decoration: BoxDecoration(
-                                color: isSel ? AppColors.pillBackground : Colors.white,
-                                borderRadius: BorderRadius.circular(AppDimens.radiusFull),
-                                border: Border.all(
-                                  color: isSel ? AppColors.accentTurquoise : AppColors.borderLight,
-                                  width: 1.2,
-                                ),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  '₦ ${_currencyFormat.format(val)}',
-                                  style: GoogleFonts.sourceSans3(
-                                    fontSize: 12.5,
-                                    fontWeight: isSel ? FontWeight.w700 : FontWeight.w600,
-                                    color: isSel ? AppColors.primaryTeal : AppColors.textPrimary,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        );
-                      }).toList(),
                     ),
 
                     const SizedBox(height: AppDimens.space28),
@@ -289,53 +252,51 @@ class _OnboardingBudgetSetupScreenState extends State<OnboardingBudgetSetupScree
   }
 
   Widget _buildExpenseGroupCard(List<Map<String, dynamic>> items) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(AppDimens.radiusCard),
-        border: Border.all(color: AppColors.borderLight, width: 1.2),
-      ),
-      child: Column(
-        children: List.generate(items.length, (idx) {
-          final item = items[idx];
-          final isLast = idx == items.length - 1;
-          return Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: AppDimens.space16,
-                  vertical: AppDimens.space12,
-                ),
-                child: Row(
-                  children: [
-                    Icon(item['icon'] as IconData, size: 18, color: AppColors.accentTurquoise),
-                    const SizedBox(width: AppDimens.space12),
-                    Expanded(
-                      child: Text(
-                        item['title'] as String,
-                        style: GoogleFonts.sourceSans3(
-                          fontSize: 14.5,
-                          fontWeight: FontWeight.w600,
-                          color: AppColors.textPrimary,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      '₦ ${_currencyFormat.format(item['amount'])}',
+    return Column(
+      children: List.generate(items.length, (idx) {
+        final item = items[idx];
+        final isLast = idx == items.length - 1;
+        return Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                vertical: AppDimens.space12,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Text(
+                      item['title'] as String,
                       style: GoogleFonts.sourceSans3(
-                        fontSize: 14.5,
-                        fontWeight: FontWeight.w700,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.w600,
                         color: AppColors.textPrimary,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 5),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFF1F5F5),
+                      borderRadius: BorderRadius.circular(AppDimens.radiusFull),
+                    ),
+                    child: Text(
+                      _currencyFormat.format(item['amount']),
+                      style: GoogleFonts.sourceSans3(
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.primaryTeal,
+                      ),
+                    ),
+                  ),
+                ],
               ),
-              if (!isLast) const Divider(height: 1, color: AppColors.borderLight, indent: 46),
-            ],
-          );
-        }),
-      ),
+            ),
+            if (!isLast) const Divider(height: 1, color: Color(0xFFE5EBEB)),
+          ],
+        );
+      }),
     );
   }
 
