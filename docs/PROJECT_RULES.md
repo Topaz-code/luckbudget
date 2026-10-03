@@ -7,7 +7,7 @@ These rules override anything you infer. If a rule conflicts with a task, stop a
 - Do not modify existing files until I approve a file-impact list for that batch.
 - Never delete or modify files outside the Flutter work (Expo/Supabase code, remote docs, fonts the Expo app uses) without asking first.
 - Do not change business logic, policy values, or architecture unless I explicitly say so in this conversation. If you think something is wrong, report it as a question. Do not fix it.
-- Do not "improve" designs. Figma/Penpot is the source of truth. Allowed deviations: real text inputs, scroll safety, 48dp touch targets. List each one.
+- Do not "improve" designs. Figma/Penpot and /home/topaz/Downloads/figma-export are the sources of truth. Allowed deviations: real text inputs, scroll safety, 48dp touch targets. List each one.
 
 ## 2. Business rules (provisional, single source: lib/core/config/policy_config.dart)
 - All money is integer kobo. No floating-point Naira, no rounding loss. Any division remainder goes to the last day so totals are exact.
