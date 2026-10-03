@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Bank Account</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="clip-0">
+      <rect x="22" y="120.5" width="346" height="114.359375" rx="21"/>
+    </clipPath>
+    <filter id="filter-1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <filter id="filter-2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <rect id="bg-back-link" x="22" y="58.25" width="42" height="42" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(33 69.25) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-bank-account" x="107.83" y="78" fill="#0E3039" font-family="Source Sans 3" font-size="27" font-weight="700" letter-spacing="-0.27">Bank account</text>
+    <text id="text-withdrawal-accou" x="107.83" y="100" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="400">Withdrawal account</text>
+    <rect id="bg-tag" x="308.75" y="66.25" width="59.25" height="26" rx="9" fill="#E3F2F0" fill-opacity="1"/>
+    <text id="text-verified" x="317.75" y="82.25" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="700">Verified</text>
+    <rect id="bg-hero" x="22" y="120.5" width="346" height="114.36" rx="21" fill="#0E3039" fill-opacity="1" filter="url(#filter-0)"/>
+    <rect id="hero-after" x="276" y="78.5" width="126" height="126" rx="50" fill="#37B1A7" fill-opacity="0.2" clip-path="url(#clip-0)"/>
+    <text id="text-withdrawals-go-h" x="40" y="150.5" fill="#FFFFFF" fill-opacity="0.76" font-family="Source Sans 3" font-size="13" font-weight="400">Withdrawals go here.</text>
+    <text id="text-use-your-own" x="40" y="185.05" fill="#FFFFFF" font-family="Source Sans 3" font-size="24" font-weight="700" letter-spacing="-0.24">Use your own</text>
+    <text id="text-account" x="40" y="210.95" fill="#FFFFFF" font-family="Source Sans 3" font-size="24" font-weight="700" letter-spacing="-0.24">account.</text>
+    <text id="text-current-account" x="22" y="270.86" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Current account</text>
+    <text id="text-active" x="333.95" y="270.86" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">Active</text>
+    <rect id="bg-bank-card" x="22" y="285.86" width="346" height="156" rx="21" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-1)"/>
+    <rect id="bg-bank-top" x="23" y="286.86" width="344" height="82" rx="0" fill="none"/>
+    <line id="bg-bank-top-border-bottom" x1="23" y1="368.36" x2="367" y2="368.36" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-bank-icon" x="38" y="308.86" width="44" height="44" rx="15" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-2" transform="translate(48.5 308.86) scale(0.958 0.958)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 19.5h15" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-kuda-microfinanc" x="94" y="322.36" fill="#0E3039" font-family="Source Sans 3" font-size="16" font-weight="700">Kuda Microfinance Bank</text>
+    <text id="text-ready-for-withdr" x="94" y="342.36" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Ready for withdrawals</text>
+    <rect id="bg-tag-2" x="301.08" y="317.86" width="50.92" height="26" rx="9" fill="#E3F2F0" fill-opacity="1"/>
+    <text id="text-active-2" x="310.08" y="327.86" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Active</text>
+    <rect id="bg-bank-details" x="23" y="368.86" width="344" height="72" rx="0" fill="#E1EAE8" fill-opacity="1"/>
+    <rect id="bg-detail" x="23" y="368.86" width="171.5" height="72" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <text id="text-account-name" x="37" y="391.86" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">Account name</text>
+    <text id="text-yakubu-manage" x="37" y="414.86" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Yakubu Manage</text>
+    <rect id="bg-detail-2" x="195.5" y="368.86" width="171.5" height="72" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <text id="text-account-number" x="209.5" y="391.86" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">Account number</text>
+    <text id="text-0187-456-123" x="209.5" y="414.86" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">0187 456 123</text>
+    <text id="text-edit-account" x="22" y="477.86" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Edit account</text>
+    <text id="text-bank-check" x="305.17" y="477.86" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">Bank check</text>
+    <rect id="bg-form-card" x="22" y="492.86" width="346" height="207" rx="21" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-2)"/>
+    <rect id="bg-input-row" x="37" y="498.86" width="316" height="65" rx="0" fill="none"/>
+    <line id="bg-input-row-border-bottom" x1="37" y1="563.36" x2="353" y2="563.36" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-bank" x="37" y="517.86" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">Bank</text>
+    <rect id="bg-input-row-2" x="37" y="563.86" width="316" height="65" rx="0" fill="none"/>
+    <line id="bg-input-row-2-border-bottom" x1="37" y1="628.36" x2="353" y2="628.36" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-account-number-2" x="37" y="583.86" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">Account number</text>
+    <text id="text-0187456123" x="37" y="606.66" fill="#0E3039" font-family="Source Sans 3" font-size="16" font-weight="700">0187456123</text>
+    <text id="text-account-name-2" x="37" y="649.36" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">Account name</text>
+    <text id="text-yakubu-manage-2" x="37" y="672.16" fill="#0E3039" font-family="Source Sans 3" font-size="16" font-weight="700">Yakubu Manage</text>
+    <text id="text-we-check-the-acc" x="24" y="717.86" fill="#48645F" font-family="Source Sans 3" font-size="12" font-weight="700">We check the account name before saving.</text>
+    <rect id="bg-button" x="22" y="739.86" width="168" height="48" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-cancel" x="84.05" y="768.36" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Cancel</text>
+    <rect id="bg-button-2" x="200" y="739.86" width="168" height="48" rx="14" fill="#37B1A7" fill-opacity="1" stroke="#000000" stroke-width="1" stroke-opacity="0"/>
+    <text id="text-save" x="268.13" y="768.36" fill="#FFFFFF" font-family="Source Sans 3" font-size="15" font-weight="700">Save</text>
+</svg>

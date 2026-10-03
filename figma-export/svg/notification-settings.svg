@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Notification settings</title>
+  <defs>
+    <filter id="filter-0" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <clipPath id="clip-0">
+      <rect x="22" y="123.875" width="346" height="90.09375" rx="21"/>
+    </clipPath>
+    <filter id="filter-1" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+    <filter id="filter-2" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0E3039" flood-opacity="0.13"/>
+    </filter>
+    <filter id="filter-3" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0E3039" flood-opacity="0.13"/>
+    </filter>
+    <filter id="filter-4" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0E3039" flood-opacity="0.13"/>
+    </filter>
+    <filter id="filter-5" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0E3039" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <rect id="bg-back-link" x="22" y="59.94" width="42" height="42" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <g id="icon-layer" transform="translate(33 70.94) scale(0.833 0.833)" fill="none"><path d="M15 5 8 12l7 7" stroke="#0E3039" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-notifications" x="117.75" y="78" fill="#0E3039" font-family="Source Sans 3" font-size="27" font-weight="700" letter-spacing="-0.27">Notifications</text>
+    <text id="text-useful-nudges-on" x="117.75" y="101" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="400">Useful nudges only</text>
+    <rect id="bg-inline-tag" x="320.95" y="67.94" width="47.03" height="26" rx="9" fill="#E3F2F0" fill-opacity="1"/>
+    <text id="text-quiet" x="329.95" y="83.94" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="700">Quiet</text>
+    <rect id="bg-hero-card" x="22" y="123.88" width="346" height="90.09" rx="21" fill="#0E3039" fill-opacity="1" filter="url(#filter-0)"/>
+    <rect id="hero-card-after" x="280" y="79.88" width="124" height="124" rx="50" fill="#37B1A7" fill-opacity="0.2" clip-path="url(#clip-0)"/>
+    <text id="text-choose-only-usef" x="40" y="154.88" fill="#FFFFFF" fill-opacity="0.75" font-family="Source Sans 3" font-size="13" font-weight="400">Choose only useful alerts.</text>
+    <text id="text-let-otis-nudge" x="40" y="190.06" fill="#FFFFFF" font-family="Source Sans 3" font-size="24" font-weight="700" letter-spacing="-0.24">Let Otis nudge, not disturb.</text>
+    <text id="text-budget-reminders" x="22" y="249.97" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Budget reminders</text>
+    <text id="text-money-habits" x="294.42" y="249.97" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">Money habits</text>
+    <rect id="bg-card" x="22" y="264.97" width="346" height="185.88" rx="19" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-1)"/>
+    <rect id="bg-row" x="23" y="265.97" width="344" height="61.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-border-bottom" x1="23" y1="327.1" x2="367" y2="327.1" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon" x="37" y="278.28" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-2" transform="translate(45 286.28) scale(0.833 0.833)" fill="none"><path d="M18 10.8c0-3.4-2.1-5.8-6-5.8s-6 2.4-6 5.8V14l-1.5 3h15L18 14v-3.2Z" stroke="#1F7D76" stroke-width="2" stroke-linejoin="round"></path><path d="M9.5 19a2.8 2.8 0 0 0 5 0" stroke="#1F7D76" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-daily-reminder" x="85" y="289.97" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Daily reminder</text>
+    <text id="text-morning-allowanc" x="85" y="309.97" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Morning allowance nudge</text>
+    <rect id="bg-toggle" x="287" y="280.28" width="66" height="32" rx="11" fill="#E3F2F0" fill-opacity="1" stroke="#37B1A7" stroke-width="1" stroke-opacity="0.45"/>
+    <text id="text-on" x="323" y="299.78" fill="#1F7D76" font-family="Source Sans 3" font-size="11" font-weight="800" letter-spacing="0.22">On</text>
+    <rect id="bg-layer-5" x="296" y="285.28" width="22" height="22" rx="8" fill="#37B1A7" fill-opacity="1" filter="url(#filter-2)"/>
+    <rect id="bg-row-2" x="23" y="327.59" width="344" height="61.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-2-border-bottom" x1="23" y1="388.71999999999997" x2="367" y2="388.71999999999997" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon-2" x="37" y="339.91" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-3" transform="translate(45 347.91) scale(0.833 0.833)" fill="none"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" stroke="#1F7D76" stroke-width="2"></path><path d="M19 13.4v-2.8l-2-.5c-.2-.6-.4-1.1-.7-1.6l1.1-1.8-2-2-1.8 1.1c-.5-.3-1-.5-1.6-.7L11.5 3h-2.8l-.5 2c-.6.2-1.1.4-1.6.7L4.8 4.6l-2 2 1.1 1.8c-.3.5-.5 1-.7 1.6l-2 .5v2.8l2 .5c.2.6.4 1.1.7 1.6l-1.1 1.8 2 2 1.8-1.1c.5.3 1 .5 1.6.7l.5 2h2.8l.5-2c.6-.2 1.1-.4 1.6-.7l1.8 1.1 2-2-1.1-1.8c.3-.5.5-1 .7-1.6l2-.5Z" stroke="#1F7D76" stroke-width="1.6" stroke-linejoin="round"></path></g>
+    <text id="text-budget-recap" x="85" y="351.59" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Budget recap</text>
+    <text id="text-monthly-otis-rec" x="85" y="371.59" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Monthly Otis recap</text>
+    <rect id="bg-toggle-2" x="287" y="341.91" width="66" height="32" rx="11" fill="#E3F2F0" fill-opacity="1" stroke="#37B1A7" stroke-width="1" stroke-opacity="0.45"/>
+    <text id="text-on-2" x="323" y="361.41" fill="#1F7D76" font-family="Source Sans 3" font-size="11" font-weight="800" letter-spacing="0.22">On</text>
+    <rect id="bg-layer-6" x="296" y="346.91" width="22" height="22" rx="8" fill="#37B1A7" fill-opacity="1" filter="url(#filter-3)"/>
+    <rect id="bg-row-3" x="23" y="389.22" width="344" height="60.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <rect id="bg-row-icon-3" x="37" y="401.53" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-4" transform="translate(45 409.53) scale(0.833 0.833)" fill="none"><path d="M7 10V8a5 5 0 0 1 10 0v2" stroke="#1F7D76" stroke-width="2" stroke-linecap="round"></path><path d="M6 10h12v10H6V10Z" stroke="#1F7D76" stroke-width="2" stroke-linejoin="round"></path></g>
+    <text id="text-save-nudges" x="85" y="413.22" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Save nudges</text>
+    <text id="text-goal-progress-up" x="85" y="433.22" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Goal progress updates</text>
+    <rect id="bg-toggle-3" x="287" y="403.53" width="66" height="32" rx="11" fill="#F1F4F4" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <text id="text-off" x="296" y="423.03" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="800" letter-spacing="0.22">Off</text>
+    <rect id="bg-layer-7" x="325" y="408.53" width="22" height="22" rx="8" fill="#FFFFFF" fill-opacity="1" filter="url(#filter-4)"/>
+    <text id="text-money-alerts" x="22" y="486.84" fill="#0E3039" font-family="Source Sans 3" font-size="18" font-weight="700" letter-spacing="-0.18">Money alerts</text>
+    <text id="text-important" x="311.39" y="486.84" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="700">Important</text>
+    <rect id="bg-card-2" x="22" y="501.84" width="346" height="124.25" rx="19" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1" filter="url(#filter-5)"/>
+    <rect id="bg-row-4" x="23" y="502.84" width="344" height="61.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <line id="bg-row-4-border-bottom" x1="23" y1="563.97" x2="367" y2="563.97" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <rect id="bg-row-icon-4" x="37" y="515.16" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-5" transform="translate(45 523.16) scale(0.833 0.833)" fill="none"><path d="M4 9h16L12 4 4 9Z" stroke="#1F7D76" stroke-width="2" stroke-linejoin="round"></path><path d="M6 10v7M10 10v7M14 10v7M18 10v7M4.5 19.5h15" stroke="#1F7D76" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-bank-updates" x="85" y="526.84" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Bank updates</text>
+    <text id="text-top-up-and-withd" x="85" y="546.84" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Top-up and withdrawal alerts</text>
+    <text id="text-always-on" x="353" y="536.16" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="800" text-anchor="end">Always on</text>
+    <rect id="bg-row-5" x="23" y="564.47" width="344" height="60.63" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+    <rect id="bg-row-icon-5" x="37" y="576.78" width="36" height="36" rx="13" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer-6" transform="translate(45 584.78) scale(0.833 0.833)" fill="none"><path d="M12 3.5 19 6v5.4c0 4.4-2.8 7.2-7 9.1-4.2-1.9-7-4.7-7-9.1V6l7-2.5Z" stroke="#1F7D76" stroke-width="2" stroke-linejoin="round"></path><path d="m9 12 2 2 4-4" stroke="#1F7D76" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-security-alerts" x="85" y="588.47" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700">Security alerts</text>
+    <text id="text-pin-and-account" x="85" y="608.47" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">PIN and account changes</text>
+    <text id="text-always-on-2" x="353" y="597.78" fill="#1F7D76" font-family="Source Sans 3" font-size="12" font-weight="800" text-anchor="end">Always on</text>
+    <rect id="bg-note" x="22" y="638.09" width="346" height="44.19" rx="16" fill="#E3F2F0" fill-opacity="1"/>
+    <text id="text-money-and-securi" x="36" y="664.09" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="400">Money and security alerts stay on.</text>
+</svg>

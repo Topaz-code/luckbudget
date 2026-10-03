@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="390" height="844" viewBox="0 0 390 844">
+  <title>LockBudget Activity</title>
+  <rect id="screen-bg" x="0" y="0" width="390" height="844" fill="#FBFDFD"/>
+    <text id="text-9-41" x="22" y="30.5" fill="#0E3039" font-family="Source Sans 3" font-size="13" font-weight="700">9:41</text>
+    <rect id="bg-layer" x="317" y="28" width="3" height="5" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.45"/>
+    <rect id="bg-layer-2" x="322" y="26" width="3" height="7" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.65"/>
+    <rect id="bg-layer-3" x="327" y="24" width="3" height="9" rx="2" fill="#0E3039" fill-opacity="1" opacity="0.85"/>
+    <rect id="bg-layer-4" x="332" y="21" width="3" height="12" rx="2" fill="#0E3039" fill-opacity="1"/>
+    <rect id="bg-battery" x="342" y="20" width="26" height="14" rx="4" fill="#0E3039" fill-opacity="1"/>
+    <text id="text-61" x="350.23" y="29.5" fill="#FFFFFF" font-family="Source Sans 3" font-size="9" font-weight="700">61</text>
+    <text id="text-activity" x="22" y="78" fill="#0E3039" font-family="Source Sans 3" font-size="27" font-weight="700" letter-spacing="-0.27">Activity</text>
+    <text id="text-your-lockbudget" x="22" y="99" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="400">Your LockBudget money trail</text>
+    <g id="img-avatar" transform="translate(326 57.75) scale(0.263 0.263)"><rect width="160" height="160" rx="48" fill="#E9FFF6"/>
+  <circle cx="80" cy="74" r="42" fill="#4B2E1F"/>
+  <path d="M38 132c8-26 25-39 42-39s34 13 42 39" fill="#00A870"/>
+  <circle cx="80" cy="76" r="32" fill="#8A5A3B"/>
+  <path d="M52 72c2-22 16-35 31-35 17 0 29 14 31 36-14-6-45-7-62-1Z" fill="#26170F"/>
+  <circle cx="68" cy="78" r="4" fill="#1E120B"/>
+  <circle cx="94" cy="78" r="4" fill="#1E120B"/>
+  <path d="M72 94c6 5 13 5 19 0" stroke="#2B1A12" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="52" cy="84" r="6" fill="#8A5A3B"/>
+  <circle cx="108" cy="84" r="6" fill="#8A5A3B"/>
+  <path d="M53 50c13-24 46-28 66-2-13-5-44-8-66 2Z" fill="#130C08"/></g>
+    <rect id="bg-flow-strip" x="22" y="119.5" width="346" height="61" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E1EAE8" stroke-width="1"/>
+    <rect id="bg-flow-icon" x="36" y="135" width="30" height="30" rx="11" fill="#E3F2F0" fill-opacity="1"/>
+    <g id="icon-layer" transform="translate(42 141) scale(0.75 0.75)" fill="none"><path d="M12 5v14M12 19l-5-5M12 19l5-5" stroke="#1F7D76" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-25-000" x="88" y="146.25" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700" letter-spacing="-0.15">25,000</text>
+    <g id="icon-layer-2" transform="translate(75 135.25) scale(0.09 0.093)" fill="none"><path d="M8 0H24V140H8V0ZM76 0H92V140H76V0ZM8 8H24L92 132H76L8 8ZM0 50H100V64H0V50ZM0 74H100V88H0V74Z" fill="#0E3039"></path></g>
+    <text id="text-income" x="75" y="163.25" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="700">Income</text>
+    <rect id="bg-flow-divider" x="194.5" y="132.5" width="1" height="35" rx="0" fill="#E1EAE8" fill-opacity="1"/>
+    <rect id="bg-flow-icon-2" x="207.5" y="135" width="30" height="30" rx="11" fill="#F2B32A" fill-opacity="0.16"/>
+    <g id="icon-layer-3" transform="translate(213.5 141) scale(0.75 0.75)" fill="none"><path d="M12 19V5M12 5 7 10M12 5l5 5" stroke="#9B6A00" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-7-300" x="259.5" y="146.25" fill="#0E3039" font-family="Source Sans 3" font-size="15" font-weight="700" letter-spacing="-0.15">7,300</text>
+    <g id="icon-layer-4" transform="translate(246.5 135.25) scale(0.09 0.093)" fill="none"><path d="M8 0H24V140H8V0ZM76 0H92V140H76V0ZM8 8H24L92 132H76L8 8ZM0 50H100V64H0V50ZM0 74H100V88H0V74Z" fill="#0E3039"></path></g>
+    <text id="text-expenses" x="246.5" y="163.25" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="700">Expenses</text>
+    <text id="text-money-trail" x="22" y="216.5" fill="#0E3039" font-family="Source Sans 3" font-size="20" font-weight="700" letter-spacing="-0.2">Money trail</text>
+    <text id="text-latest-first" x="308.92" y="216.5" fill="#48645F" font-family="Source Sans 3" font-size="13" font-weight="600">Latest first</text>
+    <rect id="bg-button" x="22" y="232.5" width="15.47" height="21.5" rx="0" fill="none"/>
+    <line id="bg-button-border-bottom" x1="22" y1="253" x2="37.47" y2="253" stroke="#37B1A7" stroke-width="2" stroke-opacity="1"/>
+    <text id="text-all" x="29.74" y="243.5" fill="#1F7D76" font-family="Source Sans 3" font-size="13.5" font-weight="700" text-anchor="middle">All</text>
+    <rect id="bg-button-2" x="51.47" y="232.5" width="51.92" height="21.5" rx="0" fill="none"/>
+    <line id="bg-button-2-border-bottom" x1="51.47" y1="253" x2="103.39" y2="253" stroke="#000000" stroke-width="2" stroke-opacity="0"/>
+    <text id="text-releases" x="77.43" y="243.5" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="700" text-anchor="middle">Releases</text>
+    <rect id="bg-button-3" x="117.39" y="232.5" width="34.55" height="21.5" rx="0" fill="none"/>
+    <line id="bg-button-3-border-bottom" x1="117.39" y1="253" x2="151.94" y2="253" stroke="#000000" stroke-width="2" stroke-opacity="0"/>
+    <text id="text-saves" x="134.67" y="243.5" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="700" text-anchor="middle">Saves</text>
+    <rect id="bg-button-4" x="165.94" y="232.5" width="48.88" height="21.5" rx="0" fill="none"/>
+    <line id="bg-button-4-border-bottom" x1="165.94" y1="253" x2="214.82" y2="253" stroke="#000000" stroke-width="2" stroke-opacity="0"/>
+    <text id="text-pending" x="190.38" y="243.5" fill="#48645F" font-family="Source Sans 3" font-size="13.5" font-weight="700" text-anchor="middle">Pending</text>
+    <text id="text-today" x="22" y="281" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="700" letter-spacing="0.825">TODAY</text>
+    <rect id="bg-activity-item" x="22" y="292" width="346" height="63.44" rx="0" fill="none"/>
+    <line id="bg-activity-item-border-bottom" x1="22" y1="354.94" x2="368" y2="354.94" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-airtime-release" x="22" y="320" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Airtime release</text>
+    <text id="text-from-airtime-bud" x="22" y="337.69" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">From Airtime budget, 10:24 AM</text>
+    <text id="text-300" x="368" y="320.97" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">−₦300</text>
+    <text id="text-done" x="368" y="337.97" fill="#1F7D76" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="end">Done</text>
+    <rect id="bg-activity-item-2" x="22" y="363.44" width="346" height="63.44" rx="0" fill="none"/>
+    <line id="bg-activity-item-2-border-bottom" x1="22" y1="426.38" x2="368" y2="426.38" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-goal-save-starte" x="22" y="391.44" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Goal save started</text>
+    <text id="text-my-goal-9-41-am" x="22" y="409.13" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">My goal, 9:41 AM</text>
+    <text id="text-20-000" x="368" y="392.41" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">−₦20,000</text>
+    <text id="text-done-2" x="368" y="409.41" fill="#1F7D76" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="end">Done</text>
+    <rect id="bg-activity-item-3" x="22" y="434.88" width="346" height="63.44" rx="0" fill="none"/>
+    <line id="bg-activity-item-3-border-bottom" x1="22" y1="497.82" x2="368" y2="497.82" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-budget-top-up" x="22" y="462.88" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Budget top-up</text>
+    <text id="text-transfer-receive" x="22" y="480.56" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">Transfer received, 9:30 AM</text>
+    <text id="text-25-000-2" x="368" y="463.84" fill="#1F7D76" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">+₦25,000</text>
+    <text id="text-done-3" x="368" y="480.84" fill="#1F7D76" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="end">Done</text>
+    <text id="text-yesterday" x="22" y="523.31" fill="#48645F" font-family="Source Sans 3" font-size="11" font-weight="700" letter-spacing="0.825">YESTERDAY</text>
+    <rect id="bg-activity-item-4" x="22" y="534.31" width="346" height="63.44" rx="0" fill="none"/>
+    <line id="bg-activity-item-4-border-bottom" x1="22" y1="597.25" x2="368" y2="597.25" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-food-release" x="22" y="562.31" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Food release</text>
+    <text id="text-from-food-budget" x="22" y="580" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">From Food budget, 7:12 PM</text>
+    <text id="text-2-000" x="368" y="563.28" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">−₦2,000</text>
+    <text id="text-done-4" x="368" y="580.28" fill="#1F7D76" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="end">Done</text>
+    <rect id="bg-activity-item-5" x="22" y="605.75" width="346" height="63.44" rx="0" fill="none"/>
+    <line id="bg-activity-item-5-border-bottom" x1="22" y1="668.69" x2="368" y2="668.69" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-electricity-rele" x="22" y="633.75" fill="#0E3039" font-family="Source Sans 3" font-size="14" font-weight="700">Electricity release</text>
+    <text id="text-from-electricity" x="22" y="651.44" fill="#48645F" font-family="Source Sans 3" font-size="12.5" font-weight="400">From Electricity budget, 4:08 PM</text>
+    <text id="text-5-000" x="368" y="634.72" fill="#48645F" font-family="Source Sans 3" font-size="14" font-weight="700" text-anchor="end">−₦5,000</text>
+    <text id="text-done-5" x="368" y="651.72" fill="#1F7D76" font-family="Source Sans 3" font-size="11.5" font-weight="700" text-anchor="end">Done</text>
+    <rect id="bg-nav" x="0" y="752" width="390" height="92" rx="0" fill="#FBFDFD" fill-opacity="0.96"/>
+    <line id="bg-nav-border-top" x1="0" y1="752.5" x2="390" y2="752.5" stroke="#E1EAE8" stroke-width="1" stroke-opacity="1"/>
+    <text id="text-home" x="49.39" y="811.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Home</text>
+    <g id="icon-layer-5" transform="translate(53.13 770.13) scale(0.917 0.917)" fill="none"><path d="M3.5 11.2 12 4l8.5 7.2V20a1 1 0 0 1-1 1h-5v-6h-5v6h-5a1 1 0 0 1-1-1v-8.8Z" fill="#48645F"></path></g>
+    <text id="text-save" x="139.55" y="811.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Save</text>
+    <g id="icon-layer-6" transform="translate(140.38 770.13) scale(0.917 0.917)" fill="none"><path d="M12 3.5c3.1 3 6.5 6.1 6.5 10.2A6.5 6.5 0 1 1 5.5 13.7C5.5 9.6 8.9 6.5 12 3.5Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M9.2 14.2c1.8 1.5 3.8 1.5 5.6 0" stroke="#48645F" stroke-width="2" stroke-linecap="round"></path></g>
+    <text id="text-budget" x="220.91" y="811.38" fill="#48645F" font-family="Source Sans 3" font-size="11.5" font-weight="600">Budget</text>
+    <g id="icon-layer-7" transform="translate(227.63 770.13) scale(0.917 0.917)" fill="none"><path d="M6 4h9l3 3v13H6V4Z" stroke="#48645F" stroke-width="2" stroke-linejoin="round"></path><path d="M9 11h6M9 15h6M15 4v4h4" stroke="#48645F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g>
+    <text id="text-activity-2" x="307.2" y="811.38" fill="#37B1A7" font-family="Source Sans 3" font-size="11.5" font-weight="600">Activity</text>
+    <g id="icon-layer-8" transform="translate(314.88 770.13) scale(0.917 0.917)" fill="none"><path d="M5 6h14M5 12h14M5 18h14" stroke="#37B1A7" stroke-width="2" stroke-linecap="round"></path><circle cx="8" cy="6" r="1.8" fill="#37B1A7"></circle><circle cx="16" cy="12" r="1.8" fill="#37B1A7"></circle><circle cx="11" cy="18" r="1.8" fill="#37B1A7"></circle></g>
+</svg>
